@@ -1,0 +1,147 @@
+[in#0/gdigrab @ 000001f2ccb71840] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 000001f2ccb71ec0] Failed reading RTSP data: Error number -10054 occurred
+[vost#0:0/h264_nvenc @ 000001f2ccb724c0] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 000001f2ccafcfc0] Error muxing a packet
+[out#0/rtsp @ 000001f2ccafcfc0] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 000001f2ccafcfc0] Terminating thread with return code -32 (Broken pipe)
+[rtsp @ 000001e5a23a1580] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 000001e55ddab3c0] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 000001e55dd497c0] Error muxing a packet
+[out#0/rtsp @ 000001e55dd497c0] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 000001e55dd497c0] Terminating thread with return code -32 (Broken pipe)
+[in#0/gdigrab @ 0000026cc5e952c0] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 0000026cc5e99580] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 0000026cc5e9c240] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 0000026cc5e9db00] Error muxing a packet
+[out#0/rtsp @ 0000026cc5e9db00] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 0000026cc5e9db00] Terminating thread with return code -32 (Broken pipe)
+[in#0/gdigrab @ 000001191abece80] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 000001191ac8adc0] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 000001191ac8b440] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 000001191ac0bb80] Error muxing a packet
+[out#0/rtsp @ 000001191ac0bb80] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 000001191ac0bb80] Terminating thread with return code -32 (Broken pipe)
+[rtsp @ 0000026c4b445140] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 0000026c4d9e3140] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 0000026c91cd8540] Error muxing a packet
+[out#0/rtsp @ 0000026c91cd8540] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 0000026c91cd8540] Terminating thread with return code -32 (Broken pipe)
+[in#0/gdigrab @ 000001a8c80ece40] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 000001a8c8189200] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 000001a8c818c000] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 000001a8c816e4c0] Error muxing a packet
+[out#0/rtsp @ 000001a8c816e4c0] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 000001a8c816e4c0] Terminating thread with return code -32 (Broken pipe)
+[in#0/gdigrab @ 00000204a73dd380] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 00000204a747adc0] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 00000204a747dbc0] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 00000204a73f9380] Error muxing a packet
+[out#0/rtsp @ 00000204a73f9380] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 00000204a73f9380] Terminating thread with return code -32 (Broken pipe)
+[rtsp @ 000002728f5a3380] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 000002720af9d200] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 000002728f502c40] Error muxing a packet
+[out#0/rtsp @ 000002728f502c40] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 000002728f502c40] Terminating thread with return code -32 (Broken pipe)
+[in#0/gdigrab @ 000002cdaf62ce40] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 000002cdaf6c3200] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 000002cdaf6cdbc0] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 000002cdaf6cfe80] Error muxing a packet
+[out#0/rtsp @ 000002cdaf6cfe80] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 000002cdaf6cfe80] Terminating thread with return code -32 (Broken pipe)
+[in#0/gdigrab @ 0000022a0c9dcf40] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 0000022a0ca71040] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 0000022a0ca71300] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 0000022a0c9f9b00] Error muxing a packet
+[out#0/rtsp @ 0000022a0c9f9b00] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 0000022a0c9f9b00] Terminating thread with return code -32 (Broken pipe)
+[rtsp @ 000002a908f0bd40] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 000002a8c48c00c0] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 000002a908e60e80] Error muxing a packet
+[out#0/rtsp @ 000002a908e60e80] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 000002a908e60e80] Terminating thread with return code -32 (Broken pipe)
+[in#0/gdigrab @ 000001f9f0f2de80] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 000001f9f0fc1d40] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 000001f9f0fc1fc0] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 000001f9f0fcffc0] Error muxing a packet
+[out#0/rtsp @ 000001f9f0fcffc0] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 000001f9f0fcffc0] Terminating thread with return code -32 (Broken pipe)
+[in#0/gdigrab @ 0000022ee3dcfa80] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 0000022ee3dd02c0] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 0000022ee3ddd640] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 0000022ee3d59040] Error muxing a packet
+[out#0/rtsp @ 0000022ee3d59040] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 0000022ee3d59040] Terminating thread with return code -32 (Broken pipe)
+[rtsp @ 000001c398699300] Failed reading RTSP data: Error number -10053 occurred
+[vost#0:0/h264_nvenc @ 000001c398655300] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 000001c41c9b7b00] Error muxing a packet
+[out#0/rtsp @ 000001c41c9b7b00] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 000001c41c9b7b00] Terminating thread with return code -32 (Broken pipe)
+[in#0/gdigrab @ 00000132162bd280] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 000001321635cc80] Failed reading RTSP data: Error number -10053 occurred
+[vost#0:0/h264_nvenc @ 000001321635fac0] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 000001321633ea80] Error muxing a packet
+[out#0/rtsp @ 000001321633ea80] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 000001321633ea80] Terminating thread with return code -32 (Broken pipe)
+[in#0/gdigrab @ 00000215969cdd80] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 0000021596a6d2c0] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 0000021596a6d580] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 00000215969ecc00] Error muxing a packet
+[out#0/rtsp @ 00000215969ecc00] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 00000215969ecc00] Terminating thread with return code -32 (Broken pipe)
+[rtsp @ 000001e2b3b31bc0] Failed reading RTSP data: Error number -10053 occurred
+[vost#0:0/h264_nvenc @ 000001e22f4c2fc0] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 000001e2b3a5c640] Error muxing a packet
+[out#0/rtsp @ 000001e2b3a5c640] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 000001e2b3a5c640] Terminating thread with return code -32 (Broken pipe)
+[in#0/gdigrab @ 0000024a07c4cf40] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 0000024a07cea700] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 0000024a07cea9c0] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 0000024a07ceec00] Error muxing a packet
+[out#0/rtsp @ 0000024a07ceec00] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 0000024a07ceec00] Terminating thread with return code -32 (Broken pipe)
+[in#0/gdigrab @ 000001dfb126d280] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 000001dfb130cdc0] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 000001dfb130f8c0] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 000001dfb12ed840] Error muxing a packet
+[out#0/rtsp @ 000001dfb12ed840] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 000001dfb12ed840] Terminating thread with return code -32 (Broken pipe)
+[rtsp @ 00000251af0c50c0] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 00000251b171f140] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 0000025235a14c80] Error muxing a packet
+[out#0/rtsp @ 0000025235a14c80] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 0000025235a14c80] Terminating thread with return code -32 (Broken pipe)
+[in#0/gdigrab @ 0000020437f7d240] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 0000020438013e40] Failed reading RTSP data: End of file
+[vost#0:0/h264_nvenc @ 000002043801eac0] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 0000020438021580] Error muxing a packet
+[out#0/rtsp @ 0000020438021580] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 0000020438021580] Terminating thread with return code -32 (Broken pipe)
+[in#0/gdigrab @ 0000015e4c1bd380] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[rtsp @ 0000015e4c25bcc0] Failed reading RTSP data: Error number -10054 occurred
+[vost#0:0/h264_nvenc @ 0000015e4c25ec40] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 0000015e4c1dce40] Error muxing a packet
+[out#0/rtsp @ 0000015e4c1dce40] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 0000015e4c1dce40] Terminating thread with return code -32 (Broken pipe)

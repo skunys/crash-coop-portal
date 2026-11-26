@@ -1,0 +1,25 @@
+2026/11/18 02:46:40 INF MediaMTX v1.21.4, windows, amd64
+2026/11/18 02:46:40 INF configuration loaded from G:\Crash game\portal\mediamtx-windows.yml
+2026/11/18 02:46:40 INF [RTSP] started with listeners on 127.0.0.1:8554 (TCP/RTSP)
+2026/11/18 02:46:40 INF [HLS] started with listener on 127.0.0.1:8888 (TCP/HTTP)
+2026/11/18 02:46:40 INF [WebRTC] started with listeners on :8889 (TCP/HTTP), :8189 (UDP/ICE)
+2026/11/18 02:46:40 INF [MoQ] started with listeners on :8892 (TCP/HTTP2), :8892 (UDP/HTTP3), :8893 (UDP/QUIC)
+2026/11/18 02:46:40 INF [RTSP] [conn 127.0.0.1:53624] opened
+2026/11/18 02:46:40 INF [RTSP] [conn 127.0.0.1:53624] closed: EOF
+2026/11/18 02:46:40 INF [RTSP] [conn 127.0.0.1:53626] opened
+2026/11/18 02:46:40 INF [RTSP] [session 9003c39c] created by 127.0.0.1:53626
+2026/11/18 02:46:40 INF [path game] stream is available and online, 2 tracks (H264, MPEG-4 Audio)
+2026/11/18 02:46:40 INF [RTSP] [session 9003c39c] is publishing to path 'game'
+2026/11/18 02:46:40 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/18 02:47:23 INF [HLS] [session f0a17f6c] created by 127.0.0.1:27621
+2026/11/18 02:47:23 INF [HLS] [muxer game] created (requested by 127.0.0.1:27621)
+2026/11/18 02:47:23 INF [HLS] [muxer game] is converting into HLS, 2 tracks (MPEG-4 Audio, H264)
+2026/11/18 02:47:23 INF [HLS] [session f0a17f6c] is reading from muxer 'game'
+2026/11/18 02:48:02 INF [HLS] [session 0d723e9f] created by 127.0.0.1:13655
+2026/11/18 02:48:02 INF [HLS] [session 0d723e9f] is reading from muxer 'game'
+2026/11/18 02:48:33 INF [HLS] [session f0a17f6c] closed: inactive
+2026/11/18 02:48:53 INF [HLS] [session 2a128e63] created by 127.0.0.1:2306
+2026/11/18 02:48:53 INF [HLS] [session 2a128e63] is reading from muxer 'game'
+2026/11/18 02:53:52 INF [RTSP] [conn 127.0.0.1:53626] closed: read tcp 127.0.0.1:8554->127.0.0.1:53626: wsarecv: An established connection was aborted by the software in your host machine.
+2026/11/18 02:53:52 INF [RTSP] [session 9003c39c] destroyed: torn down by 127.0.0.1:53626
+2026/11/18 02:53:52 INF [HLS] [muxer game] destroyed: terminated

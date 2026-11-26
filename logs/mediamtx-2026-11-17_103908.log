@@ -1,0 +1,350 @@
+2026/11/17 10:39:08 INF MediaMTX v1.21.4, windows, amd64
+2026/11/17 10:39:08 INF configuration loaded from G:\Crash game\portal\mediamtx-windows.yml
+2026/11/17 10:39:08 INF [RTSP] started with listeners on 127.0.0.1:8554 (TCP/RTSP)
+2026/11/17 10:39:08 INF [WebRTC] started with listeners on :8889 (TCP/HTTP), :8189 (UDP/ICE)
+2026/11/17 10:39:08 INF [MoQ] started with listeners on :8892 (TCP/HTTP2), :8892 (UDP/HTTP3), :8893 (UDP/QUIC)
+2026/11/17 10:39:09 INF [RTSP] [conn 127.0.0.1:22971] opened
+2026/11/17 10:39:09 INF [RTSP] [conn 127.0.0.1:22971] closed: EOF
+2026/11/17 10:39:09 INF [RTSP] [conn 127.0.0.1:22972] opened
+2026/11/17 10:39:09 INF [RTSP] [session c8829c08] created by 127.0.0.1:22972
+2026/11/17 10:39:09 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:09 INF [RTSP] [session c8829c08] is publishing to path 'game'
+2026/11/17 10:39:09 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:23 INF [RTSP] [conn 127.0.0.1:21742] opened
+2026/11/17 10:39:23 INF [RTSP] [conn 127.0.0.1:21742] closed: EOF
+2026/11/17 10:39:23 INF [RTSP] [conn 127.0.0.1:21743] opened
+2026/11/17 10:39:23 INF [RTSP] [session bba86440] created by 127.0.0.1:21743
+2026/11/17 10:39:23 INF [path game] closing existing publisher
+2026/11/17 10:39:23 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:23 INF [RTSP] [session bba86440] is publishing to path 'game'
+2026/11/17 10:39:23 INF [RTSP] [conn 127.0.0.1:22972] closed: terminated
+2026/11/17 10:39:23 INF [RTSP] [session c8829c08] destroyed: terminated
+2026/11/17 10:39:23 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:26 INF [RTSP] [conn 127.0.0.1:21749] opened
+2026/11/17 10:39:26 INF [RTSP] [session d2d05b31] created by 127.0.0.1:21749
+2026/11/17 10:39:26 INF [path game] closing existing publisher
+2026/11/17 10:39:26 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:26 INF [RTSP] [session d2d05b31] is publishing to path 'game'
+2026/11/17 10:39:26 INF [RTSP] [conn 127.0.0.1:21743] closed: terminated
+2026/11/17 10:39:26 INF [RTSP] [session bba86440] destroyed: terminated
+2026/11/17 10:39:26 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:28 INF [RTSP] [conn 127.0.0.1:63625] opened
+2026/11/17 10:39:28 INF [RTSP] [session e8163f7d] created by 127.0.0.1:63625
+2026/11/17 10:39:28 INF [path game] closing existing publisher
+2026/11/17 10:39:28 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:28 INF [RTSP] [session e8163f7d] is publishing to path 'game'
+2026/11/17 10:39:28 INF [RTSP] [conn 127.0.0.1:21749] closed: terminated
+2026/11/17 10:39:28 INF [RTSP] [session d2d05b31] destroyed: terminated
+2026/11/17 10:39:29 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:31 INF [RTSP] [conn 127.0.0.1:63629] opened
+2026/11/17 10:39:31 INF [RTSP] [session 8d8c5ff0] created by 127.0.0.1:63629
+2026/11/17 10:39:31 INF [path game] closing existing publisher
+2026/11/17 10:39:31 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:31 INF [RTSP] [session 8d8c5ff0] is publishing to path 'game'
+2026/11/17 10:39:31 INF [RTSP] [conn 127.0.0.1:63625] closed: terminated
+2026/11/17 10:39:31 INF [RTSP] [session e8163f7d] destroyed: terminated
+2026/11/17 10:39:31 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:33 INF [RTSP] [conn 127.0.0.1:50991] opened
+2026/11/17 10:39:33 INF [RTSP] [session b031096f] created by 127.0.0.1:50991
+2026/11/17 10:39:33 INF [path game] closing existing publisher
+2026/11/17 10:39:33 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:33 INF [RTSP] [session b031096f] is publishing to path 'game'
+2026/11/17 10:39:33 INF [RTSP] [conn 127.0.0.1:63629] closed: terminated
+2026/11/17 10:39:33 INF [RTSP] [session 8d8c5ff0] destroyed: terminated
+2026/11/17 10:39:33 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:36 INF [RTSP] [conn 127.0.0.1:42317] opened
+2026/11/17 10:39:36 INF [RTSP] [session 9319f8d1] created by 127.0.0.1:42317
+2026/11/17 10:39:36 INF [path game] closing existing publisher
+2026/11/17 10:39:36 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:36 INF [RTSP] [session 9319f8d1] is publishing to path 'game'
+2026/11/17 10:39:36 INF [RTSP] [conn 127.0.0.1:50991] closed: terminated
+2026/11/17 10:39:36 INF [RTSP] [session b031096f] destroyed: terminated
+2026/11/17 10:39:36 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:38 INF [RTSP] [conn 127.0.0.1:16805] opened
+2026/11/17 10:39:38 INF [RTSP] [session 646ab1bb] created by 127.0.0.1:16805
+2026/11/17 10:39:38 INF [path game] closing existing publisher
+2026/11/17 10:39:38 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:38 INF [RTSP] [session 646ab1bb] is publishing to path 'game'
+2026/11/17 10:39:38 INF [RTSP] [conn 127.0.0.1:42317] closed: terminated
+2026/11/17 10:39:38 INF [RTSP] [session 9319f8d1] destroyed: terminated
+2026/11/17 10:39:38 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:41 INF [RTSP] [conn 127.0.0.1:16809] opened
+2026/11/17 10:39:41 INF [RTSP] [session bc17e9f2] created by 127.0.0.1:16809
+2026/11/17 10:39:41 INF [path game] closing existing publisher
+2026/11/17 10:39:41 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:41 INF [RTSP] [session bc17e9f2] is publishing to path 'game'
+2026/11/17 10:39:41 INF [RTSP] [conn 127.0.0.1:16805] closed: terminated
+2026/11/17 10:39:41 INF [RTSP] [session 646ab1bb] destroyed: terminated
+2026/11/17 10:39:41 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:43 INF [RTSP] [conn 127.0.0.1:9546] opened
+2026/11/17 10:39:43 INF [RTSP] [session c61db0cd] created by 127.0.0.1:9546
+2026/11/17 10:39:43 INF [path game] closing existing publisher
+2026/11/17 10:39:43 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:43 INF [RTSP] [session c61db0cd] is publishing to path 'game'
+2026/11/17 10:39:43 INF [RTSP] [conn 127.0.0.1:16809] closed: terminated
+2026/11/17 10:39:43 INF [RTSP] [session bc17e9f2] destroyed: terminated
+2026/11/17 10:39:43 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:46 INF [RTSP] [conn 127.0.0.1:25414] opened
+2026/11/17 10:39:46 INF [RTSP] [session f6ec40f3] created by 127.0.0.1:25414
+2026/11/17 10:39:46 INF [path game] closing existing publisher
+2026/11/17 10:39:46 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:46 INF [RTSP] [session f6ec40f3] is publishing to path 'game'
+2026/11/17 10:39:46 INF [RTSP] [conn 127.0.0.1:9546] closed: terminated
+2026/11/17 10:39:46 INF [RTSP] [session c61db0cd] destroyed: terminated
+2026/11/17 10:39:46 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:48 INF [RTSP] [conn 127.0.0.1:25417] opened
+2026/11/17 10:39:48 INF [RTSP] [session 2e4c111e] created by 127.0.0.1:25417
+2026/11/17 10:39:48 INF [path game] closing existing publisher
+2026/11/17 10:39:48 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:48 INF [RTSP] [session 2e4c111e] is publishing to path 'game'
+2026/11/17 10:39:48 INF [RTSP] [conn 127.0.0.1:25414] closed: terminated
+2026/11/17 10:39:48 INF [RTSP] [session f6ec40f3] destroyed: terminated
+2026/11/17 10:39:48 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:51 INF [RTSP] [conn 127.0.0.1:33774] opened
+2026/11/17 10:39:51 INF [RTSP] [session 8c1e4a1e] created by 127.0.0.1:33774
+2026/11/17 10:39:51 INF [path game] closing existing publisher
+2026/11/17 10:39:51 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:51 INF [RTSP] [session 8c1e4a1e] is publishing to path 'game'
+2026/11/17 10:39:51 INF [RTSP] [conn 127.0.0.1:25417] closed: terminated
+2026/11/17 10:39:51 INF [RTSP] [session 2e4c111e] destroyed: terminated
+2026/11/17 10:39:51 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:53 INF [RTSP] [conn 127.0.0.1:33777] opened
+2026/11/17 10:39:53 INF [RTSP] [session 54fc8806] created by 127.0.0.1:33777
+2026/11/17 10:39:53 INF [path game] closing existing publisher
+2026/11/17 10:39:53 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:53 INF [RTSP] [session 54fc8806] is publishing to path 'game'
+2026/11/17 10:39:53 INF [RTSP] [conn 127.0.0.1:33774] closed: terminated
+2026/11/17 10:39:53 INF [RTSP] [session 8c1e4a1e] destroyed: terminated
+2026/11/17 10:39:53 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:56 INF [RTSP] [conn 127.0.0.1:23015] opened
+2026/11/17 10:39:56 INF [RTSP] [session 2486f82f] created by 127.0.0.1:23015
+2026/11/17 10:39:56 INF [path game] closing existing publisher
+2026/11/17 10:39:56 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:56 INF [RTSP] [session 2486f82f] is publishing to path 'game'
+2026/11/17 10:39:56 INF [RTSP] [conn 127.0.0.1:33777] closed: terminated
+2026/11/17 10:39:56 INF [RTSP] [session 54fc8806] destroyed: terminated
+2026/11/17 10:39:56 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:39:58 INF [RTSP] [conn 127.0.0.1:23022] opened
+2026/11/17 10:39:58 INF [RTSP] [session 985fceb8] created by 127.0.0.1:23022
+2026/11/17 10:39:58 INF [path game] closing existing publisher
+2026/11/17 10:39:58 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:39:58 INF [RTSP] [session 985fceb8] is publishing to path 'game'
+2026/11/17 10:39:58 INF [RTSP] [conn 127.0.0.1:23015] closed: terminated
+2026/11/17 10:39:58 INF [RTSP] [session 2486f82f] destroyed: terminated
+2026/11/17 10:39:59 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:01 INF [RTSP] [conn 127.0.0.1:23025] opened
+2026/11/17 10:40:01 INF [RTSP] [session 670f0922] created by 127.0.0.1:23025
+2026/11/17 10:40:01 INF [path game] closing existing publisher
+2026/11/17 10:40:01 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:01 INF [RTSP] [session 670f0922] is publishing to path 'game'
+2026/11/17 10:40:01 INF [RTSP] [conn 127.0.0.1:23022] closed: terminated
+2026/11/17 10:40:01 INF [RTSP] [session 985fceb8] destroyed: terminated
+2026/11/17 10:40:01 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:03 INF [RTSP] [conn 127.0.0.1:3381] opened
+2026/11/17 10:40:03 INF [RTSP] [session e440434d] created by 127.0.0.1:3381
+2026/11/17 10:40:03 INF [path game] closing existing publisher
+2026/11/17 10:40:03 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:03 INF [RTSP] [session e440434d] is publishing to path 'game'
+2026/11/17 10:40:03 INF [RTSP] [conn 127.0.0.1:23025] closed: terminated
+2026/11/17 10:40:03 INF [RTSP] [session 670f0922] destroyed: terminated
+2026/11/17 10:40:03 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:06 INF [RTSP] [conn 127.0.0.1:48155] opened
+2026/11/17 10:40:06 INF [RTSP] [session 63b9cc7a] created by 127.0.0.1:48155
+2026/11/17 10:40:06 INF [path game] closing existing publisher
+2026/11/17 10:40:06 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:06 INF [RTSP] [session 63b9cc7a] is publishing to path 'game'
+2026/11/17 10:40:06 INF [RTSP] [conn 127.0.0.1:3381] closed: terminated
+2026/11/17 10:40:06 INF [RTSP] [session e440434d] destroyed: terminated
+2026/11/17 10:40:06 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:08 INF [RTSP] [conn 127.0.0.1:25129] opened
+2026/11/17 10:40:08 INF [RTSP] [session 8d839084] created by 127.0.0.1:25129
+2026/11/17 10:40:08 INF [path game] closing existing publisher
+2026/11/17 10:40:08 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:08 INF [RTSP] [session 8d839084] is publishing to path 'game'
+2026/11/17 10:40:08 INF [RTSP] [conn 127.0.0.1:48155] closed: terminated
+2026/11/17 10:40:08 INF [RTSP] [session 63b9cc7a] destroyed: terminated
+2026/11/17 10:40:08 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:11 INF [RTSP] [conn 127.0.0.1:1883] opened
+2026/11/17 10:40:11 INF [RTSP] [session 1b58c53e] created by 127.0.0.1:1883
+2026/11/17 10:40:11 INF [path game] closing existing publisher
+2026/11/17 10:40:11 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:11 INF [RTSP] [session 1b58c53e] is publishing to path 'game'
+2026/11/17 10:40:11 INF [RTSP] [conn 127.0.0.1:25129] closed: terminated
+2026/11/17 10:40:11 INF [RTSP] [session 8d839084] destroyed: terminated
+2026/11/17 10:40:11 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:14 INF [RTSP] [conn 127.0.0.1:45934] opened
+2026/11/17 10:40:14 INF [RTSP] [session c6035be3] created by 127.0.0.1:45934
+2026/11/17 10:40:14 INF [path game] closing existing publisher
+2026/11/17 10:40:14 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:14 INF [RTSP] [session c6035be3] is publishing to path 'game'
+2026/11/17 10:40:14 INF [RTSP] [conn 127.0.0.1:1883] closed: terminated
+2026/11/17 10:40:14 INF [RTSP] [session 1b58c53e] destroyed: terminated
+2026/11/17 10:40:14 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:16 INF [RTSP] [conn 127.0.0.1:15206] opened
+2026/11/17 10:40:16 INF [RTSP] [session 12b2e3be] created by 127.0.0.1:15206
+2026/11/17 10:40:16 INF [path game] closing existing publisher
+2026/11/17 10:40:16 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:16 INF [RTSP] [session 12b2e3be] is publishing to path 'game'
+2026/11/17 10:40:16 INF [RTSP] [conn 127.0.0.1:45934] closed: terminated
+2026/11/17 10:40:16 INF [RTSP] [session c6035be3] destroyed: terminated
+2026/11/17 10:40:16 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:18 INF [RTSP] [conn 127.0.0.1:37004] opened
+2026/11/17 10:40:18 INF [RTSP] [session 4253320c] created by 127.0.0.1:37004
+2026/11/17 10:40:18 INF [path game] closing existing publisher
+2026/11/17 10:40:18 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:18 INF [RTSP] [session 4253320c] is publishing to path 'game'
+2026/11/17 10:40:18 INF [RTSP] [conn 127.0.0.1:15206] closed: terminated
+2026/11/17 10:40:18 INF [RTSP] [session 12b2e3be] destroyed: terminated
+2026/11/17 10:40:18 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:21 INF [RTSP] [conn 127.0.0.1:47650] opened
+2026/11/17 10:40:21 INF [RTSP] [session 37372003] created by 127.0.0.1:47650
+2026/11/17 10:40:21 INF [path game] closing existing publisher
+2026/11/17 10:40:21 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:21 INF [RTSP] [session 37372003] is publishing to path 'game'
+2026/11/17 10:40:21 INF [RTSP] [conn 127.0.0.1:37004] closed: terminated
+2026/11/17 10:40:21 INF [RTSP] [session 4253320c] destroyed: terminated
+2026/11/17 10:40:21 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:23 INF [RTSP] [conn 127.0.0.1:38160] opened
+2026/11/17 10:40:23 INF [RTSP] [session 1f666ec6] created by 127.0.0.1:38160
+2026/11/17 10:40:23 INF [path game] closing existing publisher
+2026/11/17 10:40:23 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:23 INF [RTSP] [session 1f666ec6] is publishing to path 'game'
+2026/11/17 10:40:23 INF [RTSP] [conn 127.0.0.1:47650] closed: terminated
+2026/11/17 10:40:23 INF [RTSP] [session 37372003] destroyed: terminated
+2026/11/17 10:40:23 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:26 INF [RTSP] [conn 127.0.0.1:12737] opened
+2026/11/17 10:40:26 INF [RTSP] [session e46f7e5e] created by 127.0.0.1:12737
+2026/11/17 10:40:26 INF [path game] closing existing publisher
+2026/11/17 10:40:26 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:26 INF [RTSP] [session e46f7e5e] is publishing to path 'game'
+2026/11/17 10:40:26 INF [RTSP] [conn 127.0.0.1:38160] closed: terminated
+2026/11/17 10:40:26 INF [RTSP] [session 1f666ec6] destroyed: terminated
+2026/11/17 10:40:26 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:29 INF [RTSP] [conn 127.0.0.1:12741] opened
+2026/11/17 10:40:29 INF [RTSP] [session f6699dc9] created by 127.0.0.1:12741
+2026/11/17 10:40:29 INF [path game] closing existing publisher
+2026/11/17 10:40:29 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:29 INF [RTSP] [session f6699dc9] is publishing to path 'game'
+2026/11/17 10:40:29 INF [RTSP] [conn 127.0.0.1:12737] closed: terminated
+2026/11/17 10:40:29 INF [RTSP] [session e46f7e5e] destroyed: terminated
+2026/11/17 10:40:29 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:31 INF [RTSP] [conn 127.0.0.1:39958] opened
+2026/11/17 10:40:31 INF [RTSP] [session 492c1079] created by 127.0.0.1:39958
+2026/11/17 10:40:31 INF [path game] closing existing publisher
+2026/11/17 10:40:31 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:31 INF [RTSP] [session 492c1079] is publishing to path 'game'
+2026/11/17 10:40:31 INF [RTSP] [conn 127.0.0.1:12741] closed: terminated
+2026/11/17 10:40:31 INF [RTSP] [session f6699dc9] destroyed: terminated
+2026/11/17 10:40:31 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:34 INF [RTSP] [conn 127.0.0.1:65014] opened
+2026/11/17 10:40:34 INF [RTSP] [session d6bcac4a] created by 127.0.0.1:65014
+2026/11/17 10:40:34 INF [path game] closing existing publisher
+2026/11/17 10:40:34 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:34 INF [RTSP] [session d6bcac4a] is publishing to path 'game'
+2026/11/17 10:40:34 INF [RTSP] [conn 127.0.0.1:39958] closed: terminated
+2026/11/17 10:40:34 INF [RTSP] [session 492c1079] destroyed: terminated
+2026/11/17 10:40:34 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:36 INF [RTSP] [conn 127.0.0.1:12240] opened
+2026/11/17 10:40:36 INF [RTSP] [session a6c221e8] created by 127.0.0.1:12240
+2026/11/17 10:40:36 INF [path game] closing existing publisher
+2026/11/17 10:40:36 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:36 INF [RTSP] [session a6c221e8] is publishing to path 'game'
+2026/11/17 10:40:36 INF [RTSP] [conn 127.0.0.1:65014] closed: terminated
+2026/11/17 10:40:36 INF [RTSP] [session d6bcac4a] destroyed: terminated
+2026/11/17 10:40:36 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:38 INF [RTSP] [conn 127.0.0.1:12243] opened
+2026/11/17 10:40:38 INF [RTSP] [session edbd48f7] created by 127.0.0.1:12243
+2026/11/17 10:40:38 INF [path game] closing existing publisher
+2026/11/17 10:40:38 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:38 INF [RTSP] [session edbd48f7] is publishing to path 'game'
+2026/11/17 10:40:38 INF [RTSP] [conn 127.0.0.1:12240] closed: terminated
+2026/11/17 10:40:38 INF [RTSP] [session a6c221e8] destroyed: terminated
+2026/11/17 10:40:38 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:41 INF [RTSP] [conn 127.0.0.1:2044] opened
+2026/11/17 10:40:41 INF [RTSP] [session 57f7398e] created by 127.0.0.1:2044
+2026/11/17 10:40:41 INF [path game] closing existing publisher
+2026/11/17 10:40:41 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:41 INF [RTSP] [session 57f7398e] is publishing to path 'game'
+2026/11/17 10:40:41 INF [RTSP] [conn 127.0.0.1:12243] closed: terminated
+2026/11/17 10:40:41 INF [RTSP] [session edbd48f7] destroyed: terminated
+2026/11/17 10:40:41 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:44 INF [RTSP] [conn 127.0.0.1:16836] opened
+2026/11/17 10:40:44 INF [RTSP] [session b33e15e7] created by 127.0.0.1:16836
+2026/11/17 10:40:44 INF [path game] closing existing publisher
+2026/11/17 10:40:44 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:44 INF [RTSP] [session b33e15e7] is publishing to path 'game'
+2026/11/17 10:40:44 INF [RTSP] [conn 127.0.0.1:2044] closed: terminated
+2026/11/17 10:40:44 INF [RTSP] [session 57f7398e] destroyed: terminated
+2026/11/17 10:40:44 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:46 INF [RTSP] [conn 127.0.0.1:61191] opened
+2026/11/17 10:40:46 INF [RTSP] [session fb524608] created by 127.0.0.1:61191
+2026/11/17 10:40:46 INF [path game] closing existing publisher
+2026/11/17 10:40:46 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:46 INF [RTSP] [session fb524608] is publishing to path 'game'
+2026/11/17 10:40:46 INF [RTSP] [conn 127.0.0.1:16836] closed: terminated
+2026/11/17 10:40:46 INF [RTSP] [session b33e15e7] destroyed: terminated
+2026/11/17 10:40:46 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:49 INF [RTSP] [conn 127.0.0.1:49492] opened
+2026/11/17 10:40:49 INF [RTSP] [session d9efd3d9] created by 127.0.0.1:49492
+2026/11/17 10:40:49 INF [path game] closing existing publisher
+2026/11/17 10:40:49 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:49 INF [RTSP] [session d9efd3d9] is publishing to path 'game'
+2026/11/17 10:40:49 INF [RTSP] [conn 127.0.0.1:61191] closed: terminated
+2026/11/17 10:40:49 INF [RTSP] [session fb524608] destroyed: terminated
+2026/11/17 10:40:49 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:51 INF [RTSP] [conn 127.0.0.1:48563] opened
+2026/11/17 10:40:51 INF [RTSP] [session 323099b7] created by 127.0.0.1:48563
+2026/11/17 10:40:51 INF [path game] closing existing publisher
+2026/11/17 10:40:51 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:51 INF [RTSP] [session 323099b7] is publishing to path 'game'
+2026/11/17 10:40:51 INF [RTSP] [conn 127.0.0.1:49492] closed: terminated
+2026/11/17 10:40:51 INF [RTSP] [session d9efd3d9] destroyed: terminated
+2026/11/17 10:40:51 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:53 INF [RTSP] [conn 127.0.0.1:30450] opened
+2026/11/17 10:40:53 INF [RTSP] [session fb60d355] created by 127.0.0.1:30450
+2026/11/17 10:40:53 INF [path game] closing existing publisher
+2026/11/17 10:40:53 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:53 INF [RTSP] [session fb60d355] is publishing to path 'game'
+2026/11/17 10:40:53 INF [RTSP] [conn 127.0.0.1:48563] closed: terminated
+2026/11/17 10:40:53 INF [RTSP] [session 323099b7] destroyed: terminated
+2026/11/17 10:40:54 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:56 INF [RTSP] [conn 127.0.0.1:42811] opened
+2026/11/17 10:40:56 INF [RTSP] [session d5530eef] created by 127.0.0.1:42811
+2026/11/17 10:40:56 INF [path game] closing existing publisher
+2026/11/17 10:40:56 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:56 INF [RTSP] [session d5530eef] is publishing to path 'game'
+2026/11/17 10:40:56 INF [RTSP] [conn 127.0.0.1:30450] closed: terminated
+2026/11/17 10:40:56 INF [RTSP] [session fb60d355] destroyed: terminated
+2026/11/17 10:40:56 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:40:59 INF [RTSP] [conn 127.0.0.1:64385] opened
+2026/11/17 10:40:59 INF [RTSP] [session c6ee684d] created by 127.0.0.1:64385
+2026/11/17 10:40:59 INF [path game] closing existing publisher
+2026/11/17 10:40:59 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:40:59 INF [RTSP] [session c6ee684d] is publishing to path 'game'
+2026/11/17 10:40:59 INF [RTSP] [conn 127.0.0.1:42811] closed: terminated
+2026/11/17 10:40:59 INF [RTSP] [session d5530eef] destroyed: terminated
+2026/11/17 10:40:59 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:41:01 INF [RTSP] [conn 127.0.0.1:4598] opened
+2026/11/17 10:41:01 INF [RTSP] [session 709af638] created by 127.0.0.1:4598
+2026/11/17 10:41:01 INF [path game] closing existing publisher
+2026/11/17 10:41:01 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:41:01 INF [RTSP] [session 709af638] is publishing to path 'game'
+2026/11/17 10:41:01 INF [RTSP] [conn 127.0.0.1:64385] closed: terminated
+2026/11/17 10:41:01 INF [RTSP] [session c6ee684d] destroyed: terminated
+2026/11/17 10:41:01 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:41:04 INF [RTSP] [conn 127.0.0.1:57035] opened
+2026/11/17 10:41:04 INF [RTSP] [session b4d5cf5b] created by 127.0.0.1:57035
+2026/11/17 10:41:04 INF [path game] closing existing publisher
+2026/11/17 10:41:04 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:41:04 INF [RTSP] [session b4d5cf5b] is publishing to path 'game'
+2026/11/17 10:41:04 INF [RTSP] [conn 127.0.0.1:4598] closed: terminated
+2026/11/17 10:41:04 INF [RTSP] [session 709af638] destroyed: terminated
+2026/11/17 10:41:04 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 10:41:06 INF [RTSP] [conn 127.0.0.1:57042] opened
+2026/11/17 10:41:06 INF [RTSP] [session bc342a56] created by 127.0.0.1:57042
+2026/11/17 10:41:06 INF [path game] closing existing publisher
+2026/11/17 10:41:06 INF [path game] stream is available and online, 1 track (H264)
+2026/11/17 10:41:06 INF [RTSP] [session bc342a56] is publishing to path 'game'
+2026/11/17 10:41:06 INF [RTSP] [conn 127.0.0.1:57035] closed: terminated
+2026/11/17 10:41:06 INF [RTSP] [session b4d5cf5b] destroyed: terminated
+2026/11/17 10:41:06 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones

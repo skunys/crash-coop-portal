@@ -1,0 +1,107 @@
+[02:46:39] portal: Crash: Mind over Mutant co-op portal
+[02:46:39] portal: token = k7Qm2xT9rL4pW8vZ (optional -- the address alone is enough)
+[02:46:40] pad: virtual Xbox 360 pad created for player 3
+[02:46:40] mediamtx: starting
+[02:46:40] mediamtx: RTSP ready on 127.0.0.1:8554
+[02:46:40] capture: game window hwnd 33296232
+[02:46:40] capture: mode 1 of 3 | audio: True
+[02:46:40] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -f gdigrab -framerate 60 -i hwnd=33296232 -f s16le -ar 48000 -ac 2 -i pipe:0 -vf scale=1280:-2 -map 0:v:0 -map 1:a:0 -c:a aac -b:a 128k -ar 48000 -af aresample=async=1 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 6M -maxrate 6M -bufsize 6M -g 12 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[02:46:40] portal: page at   http://127.0.0.1:8080/?k=k7Qm2xT9rL4pW8vZ
+[02:46:40] portal: LAN         http://192.168.2.101:8080/?k=k7Qm2xT9rL4pW8vZ
+[02:46:40] audio: loopback of Headphones (HyperX Cloud III Wireless)
+[02:46:40] portal: PUBLIC      http://93.86.197.32:8080/?k=k7Qm2xT9rL4pW8vZ
+[02:46:40] portal:            (works from outside only with the router forwarding TCP 8080 and UDP 8189 to this PC)
+[02:46:40] portal:            no router work? use the tunnel link printed below
+[02:46:40] tunnel: starting cloudflared quick tunnel
+[02:46:45] tunnel: PUBLIC https://claire-penalty-cluster-interaction.trycloudflare.com/?k=k7Qm2xT9rL4pW8vZ
+[02:46:45] tunnel: send that link -- nothing to install on her side
+[02:47:23] ws: friend connected from 127.0.0.1 (1 active)
+[02:47:23] focus: keeping the game in the foreground for player 2
+[02:47:36] ws: pad button down space
+[02:47:36] ws: her pad stick is active
+[02:47:56] ws: pad button down space
+[02:47:57] ws: friend disconnected (0 active)
+[02:48:02] ws: friend connected from 127.0.0.1 (1 active)
+[02:48:02] ws: her browser sees pad 'Xbox 360 Controller (XInput STANDARD GAMEPAD)' (mapping standard, 4 axes, 17 buttons)
+[02:48:53] ws: friend connected from 127.0.0.1 (2 active)
+[02:48:53] ws: her browser sees NO controller
+[02:49:00] ws: key down d
+[02:49:06] ws: key down w
+[02:49:10] ws: key down shift
+[02:50:00] ws: key down shift
+[02:50:01] ws: key down shift
+[02:50:02] ws: key down shift
+[02:50:02] ws: key down shift
+[02:50:03] ws: key down shift
+[02:50:03] ws: key down shift
+[02:50:04] ws: key down shift
+[02:50:07] ws: key down w
+[02:50:09] ws: key down w
+[02:50:11] ws: key down w
+[02:50:14] ws: key down w
+[02:50:17] ws: key down d
+[02:50:18] ws: key down d
+[02:50:19] ws: key down d
+[02:50:20] ws: key down w
+[02:50:21] ws: key down d
+[02:50:22] ws: key down d
+[02:50:24] ws: key down w
+[02:50:28] ws: key down d
+[02:50:29] ws: key down a
+[02:50:32] ws: key down a
+[02:50:34] ws: key down w
+[02:50:40] ws: key down d
+[02:50:42] ws: key down d
+[02:50:43] ws: key down d
+[02:50:44] ws: key down s
+[02:50:46] ws: key down s
+[02:50:54] ws: key down w
+[02:50:58] ws: key down w
+[02:50:59] ws: key down a
+[02:51:00] ws: key down a
+[02:51:01] ws: key down a
+[02:51:02] ws: key down a
+[02:51:03] ws: key down s
+[02:51:06] ws: key down a
+[02:51:07] ws: key down s
+[02:51:08] ws: key down s
+[02:51:11] ws: key down a
+[02:51:14] ws: key down a
+[02:51:20] ws: key down shift
+[02:51:21] ws: key down tab
+[02:51:22] ws: key down tab
+[02:51:23] ws: key down shift
+[02:51:24] ws: key down shift
+[02:51:25] ws: key down shift
+[02:51:38] ws: key down d
+[02:51:42] ws: key down d
+[02:51:47] ws: key down s
+[02:51:48] ws: key down s
+[02:51:52] ws: key down d
+[02:51:54] ws: key down s
+[02:51:55] ws: key down d
+[02:51:56] ws: key down s
+[02:51:56] ws: key down s
+[02:52:08] ws: key down tab
+[02:52:21] ws: key down escape
+[02:52:25] ws: key down escape
+[02:52:56] ws: key down s
+[02:52:58] ws: key down w
+[02:52:58] ws: key down d
+[02:52:59] ws: key down a
+[02:52:59] ws: key down w
+[02:53:00] ws: key down d
+[02:53:01] ws: key down s
+[02:53:01] ws: key down a
+[02:53:01] ws: key down s
+[02:53:01] ws: key down d
+[02:53:01] ws: key down s
+[02:53:02] ws: key down d
+[02:53:02] ws: key down w
+[02:53:06] ws: key down escape
+[02:53:17] ws: key down s
+[02:53:18] ws: key down s
+[02:53:18] ws: key down s
+[02:53:19] ws: key down d
+[02:53:20] ws: key down f
+[02:53:39] ws: friend disconnected (1 active)

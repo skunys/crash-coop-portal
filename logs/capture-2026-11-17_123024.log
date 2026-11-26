@@ -1,0 +1,12 @@
+[in#0/gdigrab @ 00000230b3dfbb00] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[aist#1:0/pcm_s16le @ 00000230b5e300c0] Guessed Channel Layout: stereo
+[vf#0:0 @ 00000230b5e5d1c0] More than 1000 frames duplicated
+[rtsp @ 00000230b3e0fa00] Failed reading RTSP data: End of file
+[aost#0:1/aac @ 00000230b5e5eac0] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 00000230b3ddf580] Error muxing a packet
+[out#0/rtsp @ 00000230b3ddf580] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 00000230b3ddf580] Terminating thread with return code -32 (Broken pipe)
+[rtsp @ 00000230b3e0fa00] Failed reading RTSP data: End of file
+[out#0/rtsp @ 00000230b3ddf580] Error writing trailer: Broken pipe
+[aist#1:0/pcm_s16le @ 0000020596ce4400] Guessed Channel Layout: stereo

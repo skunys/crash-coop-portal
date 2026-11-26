@@ -1,0 +1,5 @@
+[in#0/gdigrab @ 000001a44bc4cb00] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[aist#1:0/pcm_s16le @ 000001a44bce9100] Guessed Channel Layout: stereo
+[vf#0:0 @ 000001a44bd2a480] More than 1000 frames duplicated
+[in#0/gdigrab @ 000001a44bc4cb00] Failed to capture image (error 8)
+[in#0/gdigrab @ 000001a44bc4c8c0] Error during demuxing: I/O error

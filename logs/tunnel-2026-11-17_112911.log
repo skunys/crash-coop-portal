@@ -1,0 +1,45 @@
+2026-11-17T10:29:12Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-11-17T10:29:12Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-11-17T10:29:18Z INF +--------------------------------------------------------------------------------------------+
+2026-11-17T10:29:18Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-11-17T10:29:18Z INF |  https://investigated-partial-craps-edition.trycloudflare.com                              |
+2026-11-17T10:29:18Z INF +--------------------------------------------------------------------------------------------+
+2026-11-17T10:29:18Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+2026-11-17T10:29:18Z INF Version 2026.11.0 (Checksum d5c1d82031da6253dcdcff64c944cd0fe063016edeb2e4fd088075fc9bd52d0a)
+2026-11-17T10:29:18Z INF GOOS: windows, GOVersion: go1.27.4, GoArch: amd64
+2026-11-17T10:29:18Z INF Settings: map[ha-connections:1 no-autoupdate:true protocol:quic url:http://127.0.0.1:8080]
+2026-11-17T10:29:18Z INF cloudflared will not automatically update on Windows systems.
+2026-11-17T10:29:18Z INF Generated Connector ID: 2994a908-4a0f-4f0a-af4c-08472c474e19
+2026-11-17T10:29:18Z INF Initial protocol quic
+2026-11-17T10:29:18Z INF ICMP proxy will use 192.168.2.101 as source for IPv4
+2026-11-17T10:29:18Z INF ICMP proxy will use fe80::9f60:6aeb:ad31:e77d in zone Ethernet as source for IPv6
+2026-11-17T10:29:18Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+2026-11-17T10:29:18Z INF ICMP proxy will use 192.168.2.101 as source for IPv4
+2026-11-17T10:29:18Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.13
+2026-11-17T10:29:18Z INF ICMP proxy will use fe80::9f60:6aeb:ad31:e77d in zone Ethernet as source for IPv6
+2026-11-17T10:29:18Z INF Starting metrics server on 127.0.0.1:20242/metrics
+2026-11-17T10:29:18Z INF +-------------------------------------------------------------------------------------+
+2026-11-17T10:29:18Z INF |                               CONNECTIVITY PRE-CHECKS                               |
+2026-11-17T10:29:18Z INF +-------------------------------------------------------------------------------------+
+2026-11-17T10:29:18Z INF |  COMPONENT         TARGET                     STATUS  DETAILS                       |
+2026-11-17T10:29:18Z INF |  DNS Resolution    region1.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-11-17T10:29:18Z INF |  DNS Resolution    region2.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-11-17T10:29:18Z INF |  UDP Connectivity  region1.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-11-17T10:29:18Z INF |  UDP Connectivity  region2.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-11-17T10:29:18Z INF |  TCP Connectivity  region1.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-11-17T10:29:18Z INF |  TCP Connectivity  region2.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-11-17T10:29:18Z INF |  Cloudflare API    api.cloudflare.com:443     PASS    API is reachable              |
+2026-11-17T10:29:18Z INF |                                                                                     |
+2026-11-17T10:29:18Z INF |  SUMMARY: Environment is healthy. cloudflared will use 'quic' as primary protocol.  |
+2026-11-17T10:29:18Z INF +-------------------------------------------------------------------------------------+
+2026-11-17T10:29:18Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=1290fd57-0ba3-402f-8509-78654aa0e2d5 status=pass target=region1.v2.argotunnel.com
+2026-11-17T10:29:18Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=1290fd57-0ba3-402f-8509-78654aa0e2d5 status=pass target=region2.v2.argotunnel.com
+2026-11-17T10:29:18Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=1290fd57-0ba3-402f-8509-78654aa0e2d5 status=pass target=region1.v2.argotunnel.com
+2026-11-17T10:29:18Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=1290fd57-0ba3-402f-8509-78654aa0e2d5 status=pass target=region2.v2.argotunnel.com
+2026-11-17T10:29:18Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=1290fd57-0ba3-402f-8509-78654aa0e2d5 status=pass target=region1.v2.argotunnel.com
+2026-11-17T10:29:18Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=1290fd57-0ba3-402f-8509-78654aa0e2d5 status=pass target=region2.v2.argotunnel.com
+2026-11-17T10:29:18Z INF precheck component="Cloudflare API" details="API is reachable" run_id=1290fd57-0ba3-402f-8509-78654aa0e2d5 status=pass target=api.cloudflare.com:443
+2026-11-17T10:29:18Z INF precheck complete hard_fail=false run_id=1290fd57-0ba3-402f-8509-78654aa0e2d5 suggested_protocol=quic
+2026-11-17T10:29:19Z INF Registered tunnel connection connIndex=0 connection=8254d5e4-4492-4599-97bf-e3288454ae4d event=0 ip=198.41.200.13 location=fra13 protocol=quic
+2026-11-17T10:32:04Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8080
+2026-11-17T10:32:04Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://investigated-partial-craps-edition.trycloudflare.com/hls/game/video1_stream.m3u8?session=9080e5be-230e-4676-a599-d2048548531b&_HLS_msn=122&_HLS_part=2&_HLS_skip=YES event=0 ip=198.41.200.13 type=http

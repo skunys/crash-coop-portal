@@ -1,0 +1,18 @@
+[12:38:04] portal: Crash: Mind over Mutant co-op portal
+[12:38:04] portal: token = k7Qm2xT9rL4pW8vZ
+[12:38:04] pad: virtual Xbox 360 pad created for player 3
+[12:38:04] mediamtx: starting
+[12:38:25] mediamtx: RTSP did not come up; check G:\Crash game\portal\logs\mediamtx-2026-11-17_123804.log
+[12:38:25] capture: game window hwnd 9111672
+[12:38:25] capture: mode 1 of 3 | audio: True
+[12:38:25] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -f gdigrab -framerate 60 -i hwnd=9111672 -f s16le -ar 48000 -ac 2 -i pipe:0 -vf scale=1280:-2 -map 0:v:0 -map 1:a:0 -c:a aac -b:a 128k -ar 48000 -af aresample=async=1 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 6M -maxrate 6M -bufsize 6M -g 30 -bf 0 -sc_threshold 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[12:38:25] portal: page at   http://127.0.0.1:8080/?k=k7Qm2xT9rL4pW8vZ
+[12:38:25] portal: LAN         http://192.168.2.101:8080/?k=k7Qm2xT9rL4pW8vZ
+[12:38:25] audio: loopback of SAMSUNG (NVIDIA High Definition Audio)
+[12:38:25] portal: PUBLIC      http://93.86.197.32:8080/?k=k7Qm2xT9rL4pW8vZ
+[12:38:25] portal:            (works from outside only with the router forwarding TCP 8080 and UDP 8189 to this PC)
+[12:38:25] portal:            no router work? use the tunnel link printed below
+[12:38:25] tunnel: starting cloudflared quick tunnel
+[12:38:31] tunnel: PUBLIC https://trigger-ohio-evident-changed.trycloudflare.com/?k=k7Qm2xT9rL4pW8vZ
+[12:38:31] tunnel: send that link -- nothing to install on her side
+[12:39:03] tunnel: cloudflared exited (None); check G:\Crash game\portal\logs\tunnel-2026-11-17_123804.log

@@ -1,0 +1,35 @@
+[12:46:43] portal: Crash: Mind over Mutant co-op portal
+[12:46:43] portal: token = k7Qm2xT9rL4pW8vZ
+[12:46:44] pad: virtual Xbox 360 pad created for player 3
+[12:46:44] mediamtx: starting
+[12:46:44] mediamtx: RTSP ready on 127.0.0.1:8554
+[12:46:44] capture: game window hwnd 9111672
+[12:46:44] capture: mode 1 of 3 | audio: True
+[12:46:44] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -f gdigrab -framerate 60 -i hwnd=9111672 -f s16le -ar 48000 -ac 2 -i pipe:0 -vf scale=1280:-2 -map 0:v:0 -map 1:a:0 -c:a aac -b:a 128k -ar 48000 -af aresample=async=1 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 6M -maxrate 6M -bufsize 6M -g 30 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[12:46:44] portal: page at   http://127.0.0.1:8080/?k=k7Qm2xT9rL4pW8vZ
+[12:46:44] portal: LAN         http://192.168.2.101:8080/?k=k7Qm2xT9rL4pW8vZ
+[12:46:44] audio: loopback of SAMSUNG (NVIDIA High Definition Audio)
+[12:46:44] portal: PUBLIC      http://93.86.197.32:8080/?k=k7Qm2xT9rL4pW8vZ
+[12:46:44] portal:            (works from outside only with the router forwarding TCP 8080 and UDP 8189 to this PC)
+[12:46:44] portal:            no router work? use the tunnel link printed below
+[12:46:44] tunnel: starting cloudflared quick tunnel
+[12:46:51] tunnel: PUBLIC https://grow-invited-framed-anchor.trycloudflare.com/?k=k7Qm2xT9rL4pW8vZ
+[12:46:51] tunnel: send that link -- nothing to install on her side
+[12:47:33] ws: friend connected from 127.0.0.1 (1 active)
+[12:48:05] ws: friend disconnected (0 active)
+[12:48:10] ws: friend connected from 127.0.0.1 (1 active)
+[13:00:00] ws: friend connected from 127.0.0.1 (2 active)
+[13:00:14] ws: key down w
+[13:00:16] ws: key down w
+[13:00:17] ws: key down a
+[13:00:17] ws: key down d
+[13:01:50] ws: friend disconnected (1 active)
+[13:03:33] ws: friend connected from 127.0.0.1 (2 active)
+[13:03:33] ws: key down space
+[13:03:33] ws: friend disconnected (1 active)
+[13:04:19] ws: friend connected from 127.0.0.1 (2 active)
+[13:04:19] ws: key down space
+[13:04:19] ws: friend disconnected (1 active)
+[13:06:39] ws: friend connected from 127.0.0.1 (2 active)
+[13:13:31] tunnel: cloudflared exited (None); check G:\Crash game\portal\logs\tunnel-2026-11-17_124643.log
+[13:13:31] ws: friend disconnected (1 active)

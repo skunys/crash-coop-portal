@@ -1,0 +1,11 @@
+[in#0/gdigrab @ 00000277bb6c8200] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[aist#1:0/pcm_s16le @ 00000277bb6cd300] Guessed Channel Layout: stereo
+[vf#0:0 @ 00000277bb710380] More than 1000 frames duplicated
+[rtsp @ 00000277bb6def00] Failed reading RTSP data: Error number -10054 occurred
+[vost#0:0/h264_nvenc @ 00000277bb6e1e00] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 00000277bb652f80] Error muxing a packet
+[out#0/rtsp @ 00000277bb652f80] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 00000277bb652f80] Terminating thread with return code -32 (Broken pipe)
+[rtsp @ 00000277bb6def00] Failed reading RTSP data: Error number -10054 occurred
+[out#0/rtsp @ 00000277bb652f80] Error writing trailer: Broken pipe

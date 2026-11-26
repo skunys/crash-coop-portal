@@ -1,0 +1,7 @@
+[in#0 @ 000001686143cf40] Can't find window 'crash_mom', aborting.
+[in#0 @ 000001686143c940] Error opening input: I/O error
+Error opening input file title=crash_mom.
+Error opening input files: I/O error
+[rtsp @ 000002b4ad345d80] Failed reading RTSP data: Error number -10054 occurred
+[vost#0:0/h264_nvenc @ 000002b428d49b80] Error submitting a packet to the muxer: Broken pipe
+    Last messa

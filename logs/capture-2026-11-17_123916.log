@@ -1,0 +1,4 @@
+[in#0/gdigrab @ 000001e384482880] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[aist#1:0/pcm_s16le @ 000001e38448d980] Guessed Channel Layout: stereo
+[out#0/rtsp @ 000001e38446d540] Codec AVOption sc_threshold (Scene change threshold) has not been used for any stream. The most likely reason is either wrong type (e.g. a video option with no video streams) or that it is a private option of some decoder which was not actually used for any stream.
+[vf#0:0 @ 000001e3844ccac0] More than 1000 frames duplicated

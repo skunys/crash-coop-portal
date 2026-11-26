@@ -1,0 +1,10 @@
+2026/11/17 12:29:14 INF MediaMTX v1.21.4, windows, amd64
+2026/11/17 12:29:14 INF configuration loaded from G:\Crash game\portal\mediamtx-windows.yml
+2026/11/17 12:29:14 INF [RTSP] started with listeners on 127.0.0.1:8554 (TCP/RTSP)
+2026/11/17 12:29:14 INF [HLS] started with listener on 127.0.0.1:8888 (TCP/HTTP)
+2026/11/17 12:29:14 INF [WebRTC] started with listeners on :8889 (TCP/HTTP), :8189 (UDP/ICE)
+2026/11/17 12:29:14 INF [MoQ] started with listeners on :8892 (TCP/HTTP2), :8892 (UDP/HTTP3), :8893 (UDP/QUIC)
+2026/11/17 12:29:14 INF [RTSP] [conn 127.0.0.1:21550] opened
+2026/11/17 12:29:14 INF [RTSP] [conn 127.0.0.1:21550] closed: EOF
+2026/11/17 12:29:52 INF [RTSP] [conn 127.0.0.1:10681] opened
+2026/11/17 12:29:52 INF [RTSP] [conn 127.0.0.1:10681] closed: no stream is available on path 'game'

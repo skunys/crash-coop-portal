@@ -1,0 +1,24 @@
+2026/11/18 01:48:51 INF MediaMTX v1.21.4, windows, amd64
+2026/11/18 01:48:51 INF configuration loaded from G:\Crash game\portal\mediamtx-windows.yml
+2026/11/18 01:48:51 INF [RTSP] started with listeners on 127.0.0.1:8554 (TCP/RTSP)
+2026/11/18 01:48:51 INF [HLS] started with listener on 127.0.0.1:8888 (TCP/HTTP)
+2026/11/18 01:48:51 INF [WebRTC] started with listeners on :8889 (TCP/HTTP), :8189 (UDP/ICE)
+2026/11/18 01:48:51 INF [RTSP] [conn 127.0.0.1:40309] opened
+2026/11/18 01:48:51 INF [RTSP] [conn 127.0.0.1:40309] closed: EOF
+2026/11/18 01:48:51 INF [MoQ] started with listeners on :8892 (TCP/HTTP2), :8892 (UDP/HTTP3), :8893 (UDP/QUIC)
+2026/11/18 01:48:52 INF [RTSP] [conn 127.0.0.1:17039] opened
+2026/11/18 01:48:52 INF [RTSP] [session bafb6ed5] created by 127.0.0.1:17039
+2026/11/18 01:48:52 INF [path game] stream is available and online, 2 tracks (H264, MPEG-4 Audio)
+2026/11/18 01:48:52 INF [RTSP] [session bafb6ed5] is publishing to path 'game'
+2026/11/18 01:48:52 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/18 01:49:14 INF [HLS] [session aba2a107] created by 127.0.0.1:4584
+2026/11/18 01:49:14 INF [HLS] [muxer game] created (requested by 127.0.0.1:4584)
+2026/11/18 01:49:14 INF [HLS] [muxer game] is converting into HLS, 2 tracks (H264, MPEG-4 Audio)
+2026/11/18 01:49:14 INF [HLS] [session aba2a107] is reading from muxer 'game'
+2026/11/18 01:49:26 INF [HLS] [session be53b57e] created by 127.0.0.1:56494
+2026/11/18 01:49:26 INF [HLS] [session be53b57e] is reading from muxer 'game'
+2026/11/18 01:49:26 INF [HLS] [session caa3e22e] created by 127.0.0.1:53838
+2026/11/18 01:49:26 INF [HLS] [session caa3e22e] is reading from muxer 'game'
+2026/11/18 01:49:44 INF [HLS] [session aba2a107] closed: inactive
+2026/11/18 01:49:56 INF [HLS] [session caa3e22e] closed: inactive
+2026/11/18 01:50:06 INF [HLS] [session be53b57e] closed: inactive

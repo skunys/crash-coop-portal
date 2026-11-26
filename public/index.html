@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crash co-op</title>
+<style>
+  :root { color-scheme: dark; }
+  html, body { margin: 0; height: 100%; background: #07090d; overflow: hidden;
+               font: 14px/1.4 system-ui, "Segoe UI", sans-serif; color: #e8eef7; }
+  #stage { position: fixed; inset: 0; display: grid; place-items: center; }
+  video { width: 100%; height: 100%; background: #000; object-fit: contain; }
+  /* flex + overflow: the intro is taller than a short window (a windowed
+     browser, a small laptop screen), and with the old grid centring the
+     Connect button ended up below the viewport with nothing to scroll -- a
+     page where clicking did nothing. margin:auto centres it when it fits and
+     scrolls it when it does not. */
+  #overlay { position: fixed; inset: 0; display: flex; overflow-y: auto;
+             background: radial-gradient(circle at 50% 40%, #16233a, #05070b 70%);
+             z-index: 10; text-align: center; padding: 20px; }
+  #overlay > div { margin: auto; }
+  #overlay.hidden { display: none; }
+  h1 { font-size: 22px; margin: 0 0 6px; letter-spacing: .3px; }
+  p { margin: 6px 0; color: #9fb0c7; max-width: 46ch; }
+  button { margin-top: 18px; padding: 12px 26px; font-size: 16px; font-weight: 600;
+           border: 0; border-radius: 999px; cursor: pointer; color: #08131f;
+           background: linear-gradient(180deg, #7ee0ff, #35b9e8); }
+  button:disabled { opacity: .5; cursor: default; }
+  #hud { position: fixed; left: 12px; bottom: 10px; z-index: 11; font-size: 12px;
+         color: #8fa3bb; background: #0008; padding: 6px 10px; border-radius: 8px;
+         display: flex; gap: 14px; pointer-events: none; }
+  #hud b { color: #cfe6ff; font-weight: 600; }
+  .bad { color: #ff8a7a !important; }
+  .good { color: #7ce38b !important; }
+  kbd { background: #1b2433; border-radius: 5px; padding: 1px 5px; font-size: 12px; }
+  .pad-tip { font-size: 12px; color: #7f93ad; }
+  #boot-error { display: none; position: fixed; top: 0; left: 0; right: 0; z-index: 99;
+                background: #7a1f1f; color: #ffe9e6; padding: 10px 14px;
+                font-size: 13px; text-align: center; }
+  @media (max-height: 560px) {
+    #overlay { padding: 12px; }
+    h1 { font-size: 17px; }
+    p { font-size: 13px; margin: 4px 0; }
+    .keys, .extra { display: none; }
+    button { margin-top: 10px; padding: 10px 22px; }
+  }
+  #fs { position: fixed; top: 10px; right: 10px; z-index: 13; width: 38px; height: 38px;
+        border: 0; border-radius: 10px; background: #0009; color: #cfe6ff; font-size: 17px;
+        cursor: pointer; display: grid; place-items: center; padding: 0; }
+  #fs:hover { background: #16233acc; }
+  #tap { position: fixed; inset: 0; z-index: 12; display: grid; place-items: center;
+         background: #00000080; color: #dcecff; font-size: 18px; font-weight: 600;
+         text-align: center; padding: 24px; pointer-events: none; }
+  #tap.hidden { display: none; }
+</style>
+</head>
+<body>
+<div id="boot-error"></div>
+<script>
+// If this page's script cannot even parse (an old browser, a blocked file), no
+// button on it will ever work. Say so instead of leaving a dead page behind.
+(function showBootError(text) {
+  function show(msg) {
+    var box = document.getElementById('boot-error');
+    if (!box) return;
+    box.textContent = msg + ' — open the link in an up-to-date Chrome, Edge or Firefox.';
+    box.style.display = 'block';
+  }
+  window.addEventListener('error', function (ev) {
+    show('This page could not start in this browser: ' + (ev.message || 'script error'));
+  }, true);
+  window.addEventListener('unhandledrejection', function (ev) {
+    show('This page hit an error: ' + ((ev.reason && ev.reason.message) || 'unknown'));
+  });
+})();
+</script>
+<noscript><div id="boot-error" style="display:block">JavaScript is turned off, so nothing on this page can work.</div></noscript>
+<div id="stage"><video id="video" autoplay playsinline></video></div>
+<div id="tap" class="hidden">Click anywhere to start the picture</div>
+<button id="fs" title="Fullscreen">&#9974;</button>
+
+<div id="overlay">
+  <div>
+    <h1>Crash: Mind over Mutant — co-op</h1>
+    <p>You will play as the second co-op character (Carbon Crash, pad player 2).</p>
+    <p class="keys"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> move · <kbd>Space</kbd> jump ·
+       <kbd>J</kbd> light · <kbd>K</kbd> heavy · <kbd>E</kbd> jack ·
+       <kbd>Shift</kbd> block · <kbd>Q</kbd> spin · <kbd>Enter</kbd> start/pause ·
+       <kbd>Tab</kbd> map · <kbd>Ctrl</kbd> walk</p>
+    <p><b>Got a controller?</b> Plug it in and press a button — stick, d-pad and
+       buttons all work, alongside the keyboard.</p>
+    <p id="padtip" class="pad-tip">Looking for a controller…</p>
+    <p id="padtest" class="pad-tip"></p>
+    <p class="pad-tip extra">If the picture stays black after Connect, open the link in
+       Chrome, Edge or Safari — in-app browsers inside chat apps often cannot play it.</p>
+    <p id="err" class="bad"></p>
+    <button id="go">Connect</button>
+  </div>
+</div>
+
+<div id="hud">
+  <span>link <b id="s-ws">-</b></span>
+  <span>video <b id="s-vid">-</b></span>
+  <span>ping <b id="s-ping">-</b></span>
+  <span>pad <b id="s-pad">-</b></span>
+  <span>input <b id="s-in">-</b></span>
+</div>
+
+<script>
+const video = document.getElementById('video');
+const goBtn = document.getElementById('go');
+const errEl = document.getElementById('err');
+const sWs = document.getElementById('s-ws');
+const sVid = document.getElementById('s-vid');
+const sPing = document.getElementById('s-ping');
+const sPad = document.getElementById('s-pad');
+const sIn = document.getElementById('s-in');
+const padTip = document.getElementById('padtip');
+const padTest = document.getElementById('padtest');
+const PAD_LABELS = {
+  0: 'A jump', 1: 'B jack', 2: 'X light', 3: 'Y heavy', 4: 'LB spin',
+  5: 'RB pocket', 6: 'LT special', 7: 'RT block', 8: 'Back map', 9: 'Start join',
+};
+
+function setPadTest(text) {
+  if (padTest && padTest.textContent !== text) padTest.textContent = text;
+}
+
+// Standard mapping is what the indexes above are written for. A pad without it
+// (generic USB / DInput pads report mapping:"") puts its buttons wherever the
+// driver says, often past index 9 -- reading those anyway is the difference
+// between "my controller does nothing" and a controller that plays.
+function buttonMapFor(pad) {
+  if (pad.mapping === 'standard') return PAD_BUTTON_KEYS;
+  return Object.assign({}, PAD_BUTTON_KEYS, {
+    10: 'space', 11: 'e', 12: 'j', 13: 'k', 14: 'shift', 15: 'enter', 16: 'tab',
+  });
+}
+const tapEl = document.getElementById('tap');
+const fsBtn = document.getElementById('fs');
+let playerStarted = false;
+// Bumped whenever the page changes: the portal logs it, so we can tell whether
+// she is running the current page or a cached old one.
+const PAGE_VER = '2026-11-18-7';
+let padTipText = '';
+
+function setPadTip(text) {
+  if (text === padTipText) return;
+  padTipText = text;
+  if (padTip) padTip.textContent = text;
+}
+
+let pc = null, ws = null, whepUrl = null, pingAt = 0;
+
+const KEYS = new Set(['w','a','s','d','j','k','e','f','r','q',' ','shift','tab','enter','escape',
+                      'arrowup','arrowdown','arrowleft','arrowright']);
+
+function normKey(e) {
+  let k = e.key;
+  if (k === ' ') return 'space';
+  if (k.length === 1) return k.toLowerCase();
+  return k.toLowerCase();           // shift, tab, enter, escape, arrowup, control...
+}
+
+function setGood(el, text, good) {
+  el.textContent = text;
+  el.className = good ? 'good' : 'bad';
+}
+
+async function waitIce(conn, ms) {
+  if (conn.iceGatheringState === 'complete') return;
+  await new Promise(resolve => {
+    const done = () => { conn.removeEventListener('icegatheringstatechange', onChange); resolve(); };
+    const onChange = () => { if (conn.iceGatheringState === 'complete') done(); };
+    conn.addEventListener('icegatheringstatechange', onChange);
+    setTimeout(done, ms);
+  });
+}
+
+async function startVideo() {
+  pc = new RTCPeerConnection({ iceServers: [] });
+  const stream = new MediaStream();
+  video.srcObject = stream;
+  pc.ontrack = (ev) => {
+    stream.addTrack(ev.track);
+    video.play().catch(() => {});
+    sVid.textContent = 'live';
+    sVid.className = 'good';
+  };
+  pc.onconnectionstatechange = () => {
+    if (pc.connectionState === 'failed' || pc.connectionState === 'disconnected') {
+      sVid.textContent = pc.connectionState;
+      sVid.className = 'bad';
+    }
+  };
+  pc.addTransceiver('video', { direction: 'recvonly' });
+  pc.addTransceiver('audio', { direction: 'recvonly' });
+
+  await pc.setLocalDescription(await pc.createOffer());
+  await waitIce(pc, 2500);
+
+  const res = await fetch('/whep', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/sdp' },
+    body: pc.localDescription.sdp
+  });
+  if (!res.ok) throw new Error('signalling failed: HTTP ' + res.status);
+  whepUrl = res.headers.get('Location');
+  await pc.setRemoteDescription({ type: 'answer', sdp: await res.text() });
+
+  // trickle any candidates that arrived after the offer
+  pc.onicecandidate = async (ev) => {
+    if (!ev.candidate || !whepUrl) return;
+    await fetch(whepUrl, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/trickle-ice-sdpfrag' },
+      body: 'a=' + ev.candidate.candidate + '\r\n'
+    }).catch(() => {});
+  };
+}
+
+async function startHls() {
+  // Public https tunnel: WebRTC's UDP cannot cross it, so the picture arrives
+  // as low-latency HLS through the same origin (the portal proxies /hls/).
+  // Carry the access key explicitly: Safari plays HLS natively from the video
+  // element, where a missing key means a 403 and a silently black player.
+  const token = new URLSearchParams(location.search).get('k');
+  const src = '/hls/game/index.m3u8' + (token ? '?k=' + encodeURIComponent(token) : '');
+  if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = src;
+    await video.play().catch(() => {});
+    sVid.textContent = 'live';
+    sVid.className = 'good';
+    return;
+  }
+  await new Promise((resolve, reject) => {
+    if (window.Hls) return resolve();
+    // Two sources: in-app browsers and filtered networks fairly often block one
+    // CDN outright, and a player that never loads looks like a dead page.
+    const sources = [
+      'https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js',
+      'https://unpkg.com/hls.js@1/dist/hls.min.js',
+    ];
+    let next = 0;
+    const load = () => {
+      if (next >= sources.length) return resolve();   // handled just below
+      const s = document.createElement('script');
+      s.src = sources[next++];
+      s.onload = () => resolve();
+      s.onerror = load;
+      document.head.appendChild(s);
+    };
+    load();
+  });
+  if (!window.Hls || !window.Hls.isSupported()) {
+    // No player library (blocked CDN, locked-down browser): hand the playlist
+    // straight to the video element. Some browsers can play it themselves, and
+    // if not the message names the problem instead of leaving a black screen.
+    video.src = src;
+    const played = await video.play().then(() => true).catch(() => false);
+    if (played) {
+      sVid.textContent = 'live';
+      sVid.className = 'good';
+      return;
+    }
+    throw new Error('this browser cannot play the stream — update it, or use Chrome, Edge or Firefox');
+  }
+  const Hls = window.Hls;
+  const hls = new Hls({
+    // The server sends MPEG-TS HLS (one timeline carrying picture and sound),
+    // not LL-HLS parts, so lowLatencyMode stays off; the player still sits one
+    // segment behind the live edge, which is the low-latency part that matters.
+    lowLatencyMode: false,
+    liveSyncDurationCount: 1,
+    liveMaxLatencyDurationCount: 5,
+    maxLiveSyncPlaybackRate: 1.5,
+    // Keep the buffered window small: a long back buffer on a transatlantic
+    // link only costs memory, and a smaller forward buffer is quicker to fill.
+    backBufferLength: 10,
+    enableWorker: true,
+    // A slow tunnel segment must not be treated as a broken stream; retry it.
+    fragLoadPolicy: { default: { maxTimeToFirstByteMs: 15000, maxLoadTimeMs: 30000,
+                                 timeoutRetry: { maxNumRetry: 6, retryDelayMs: 500, maxRetryDelayMs: 4000 },
+                                 errorRetry: { maxNumRetry: 6, retryDelayMs: 500, maxRetryDelayMs: 4000 } } },
+  });
+  window.__hls = hls;
+  // Fatal media errors are usually one bad append (a part cut mid-frame, or a
+  // dropped packet on the tunnel). hls.js can rebuild the media source and go
+  // on, so recover instead of leaving the friend with a dead black screen.
+  let mediaRecoveries = 0;
+  hls.on(Hls.Events.ERROR, (_ev, data) => {
+    const detail = `${data.details} (${data.type})`;
+    if (!data.fatal) { console.warn('[hls] non-fatal:', detail, data.reason || ''); return; }
+    console.error('[hls] fatal:', detail, data.reason || '', data);
+    if (data.type === Hls.ErrorTypes.MEDIA_ERROR && mediaRecoveries < 4) {
+      mediaRecoveries++;
+      sVid.textContent = 'recovering';
+      sVid.className = 'bad';
+      hls.recoverMediaError();
+      return;
+    }
+    if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+      sVid.textContent = 'reconnecting';
+      sVid.className = 'bad';
+      setTimeout(() => { try { hls.startLoad(); } catch (_) {} }, 1000);
+      return;
+    }
+    sVid.textContent = data.details || data.type;
+    sVid.className = 'bad';
+  });
+  hls.on(Hls.Events.FRAG_PARSING_ERROR, () => { mediaRecoveries = 0; });
+  
+  // Drift guard: maxLiveSyncPlaybackRate already pulls the picture back to the
+  // edge by playing slightly faster. Only if it is still far behind after the
+  // stream is running (a big hiccup on a long link) do a hard jump to the edge.
+  clearInterval(window.__syncTimer);
+  let started = 0;
+  hls.on(window.Hls.Events.FRAG_BUFFERED, () => { if (!started) started = Date.now(); });
+  window.__syncTimer = setInterval(() => {
+    if (!started || Date.now() - started < 8000) return;
+    if (!hls.latency || video.readyState < 2 || video.paused) return;
+    if (hls.latency > 3.0) {
+      const edge = hls.liveSyncPosition;
+      if (edge && Math.abs(video.currentTime - edge) > 0.5) video.currentTime = edge;
+    }
+  }, 4000);
+  hls.loadSource(src);
+  hls.attachMedia(video);
+  await new Promise((resolve) => {
+    hls.on(window.Hls.Events.MANIFEST_PARSED, resolve);
+    setTimeout(resolve, 8000);
+  });
+  // Unmuted playback is what browsers sometimes block; retry on the next
+  // click or keypress if the autoplay attempt was refused.
+  const kick = () => video.play().then(() => {
+    sVid.textContent = 'live';
+    sVid.className = 'good';
+  }).catch(() => {
+    sVid.textContent = 'click to play';
+    sVid.className = 'bad';
+  });
+  await kick();
+  if (video.paused) {
+    const retry = () => { if (video.paused) kick(); };
+    document.addEventListener('click', retry);
+    window.addEventListener('keydown', retry);
+  }
+}
+
+function connectInput() {
+  const proto = location.protocol === 'https:' ? 'wss' : 'ws';
+  ws = new WebSocket(`${proto}://${location.host}/ws`);
+  ws.onopen = () => {
+    setGood(sWs, 'ok', true);
+    ws.send(JSON.stringify({ t: 'hello', ver: PAGE_VER }));
+    lastPadInfo = '';          // re-report the controller on every connection
+  };
+  ws.onclose = () => { setGood(sWs, 'closed', false); setTimeout(connectInput, 1500); };
+  ws.onerror = () => setGood(sWs, 'error', false);
+  ws.onmessage = (ev) => {
+    try {
+      const msg = JSON.parse(ev.data);
+      if (msg.t === 'pong') {
+        sPing.textContent = (performance.now() - pingAt).toFixed(0) + ' ms';
+        sPing.className = 'good';
+      }
+    } catch (_) {}
+  };
+  clearInterval(connectInput.timer);
+  connectInput.timer = setInterval(() => {
+    if (ws && ws.readyState === 1) {
+      pingAt = performance.now();
+      ws.send(JSON.stringify({ t: 'ping', ms: Date.now() }));
+    }
+  }, 2000);
+}
+
+function send(key, down, src) {
+  if (!ws || ws.readyState !== 1) return;
+  const msg = { t: 'k', c: key, d: down ? 1 : 0 };
+  if (src) msg.src = src;          // 'pad' so the host log can tell them apart
+  ws.send(JSON.stringify(msg));
+}
+
+// Tell the host what this browser sees. If her pad never appears, or appears
+// with an odd mapping, the host log says so and we stop guessing.
+let lastPadInfo = '';
+function reportPad(pad) {
+  const info = pad
+    ? `${pad.id}|${pad.mapping}|${pad.axes.length}|${pad.buttons.length}`
+    : 'none';
+  if (info === lastPadInfo) return;
+  // Only remember it once it is actually sent: before Connect there is no
+  // socket, and swallowing the report would lose the one line that says what
+  // her browser can see.
+  if (!ws || ws.readyState !== 1) return;
+  lastPadInfo = info;
+  if (!pad) {
+    ws.send(JSON.stringify({ t: 'padinfo', id: null }));
+    return;
+  }
+  ws.send(JSON.stringify({
+    t: 'padinfo', id: pad.id, mapping: pad.mapping,
+    axes: pad.axes.length, buttons: pad.buttons.length,
+  }));
+}
+
+// --- her controller -------------------------------------------------------
+// A real pad plugged into her PC drives the same virtual pad here: the left
+// stick goes through as analog values, every button as the keyboard's key, so
+// both input styles work at once.
+const PAD_BUTTON_KEYS = {
+  0: 'space',   // A     jump
+  1: 'e',       // B     jack a titan
+  2: 'j',       // X     light attack
+  3: 'k',       // Y     heavy attack
+  4: 'q',       // LB    spin
+  5: 'r',       // RB    pocket a titan
+  6: 'f',       // LT    titan special
+  7: 'shift',   // RT    block
+  8: 'tab',     // Back  map
+  9: 'enter',   // Start join / pause
+};
+const padHeld = new Set();
+let padStick = { x: 0, y: 0 };
+
+function activeGamepad() {
+  if (!navigator.getGamepads) return null;
+  // Browsers list every HID device here, including headsets and generic
+  // joysticks, so pick the best candidate instead of the first one: a
+  // "standard" mapping (Xbox, DS4/DS5, Switch Pro) is what the button indexes
+  // below are written for; axes/buttons count breaks ties.
+  let best = null;
+  let bestScore = -1;
+  for (const pad of navigator.getGamepads()) {
+    if (!pad || !pad.connected) continue;
+    let score = 0;
+    if (pad.mapping === 'standard') score += 100;
+    if (pad.axes.length >= 4) score += 10;
+    if (pad.buttons.length >= 8) score += 5;
+    if (score > bestScore) {
+      best = pad;
+      bestScore = score;
+    }
+  }
+  return best;
+}
+
+function sendStick(x, y) {
+  if (ws && ws.readyState === 1) ws.send(JSON.stringify({ t: 'stick', x, y }));
+}
+
+function stickOf(pad) {
+  let x = pad.axes[0] || 0;
+  let y = -(pad.axes[1] || 0);            // browsers report "up" as negative
+  const len = Math.hypot(x, y);
+  const dead = 0.16;                       // worn sticks never quite centre
+  if (len < dead) {
+    x = 0;
+    y = 0;
+  } else {
+    const scaled = Math.min(1, (len - dead) / (1 - dead));
+    x = (x / len) * scaled;
+    y = (y / len) * scaled;
+  }
+  // the d-pad works as well, and wins while it is pressed
+  const b = pad.buttons;
+  const dx = (b[15] && b[15].pressed ? 1 : 0) - (b[14] && b[14].pressed ? 1 : 0);
+  const dy = (b[12] && b[12].pressed ? 1 : 0) - (b[13] && b[13].pressed ? 1 : 0);
+  if (dx || dy) {
+    x = dx;
+    y = dy;
+  }
+  return { x: Math.round(x * 100) / 100, y: Math.round(y * 100) / 100 };
+}
+
+function releasePad() {
+  for (const key of padHeld) send(key, false, 'pad');
+  padHeld.clear();
+  if (padStick.x || padStick.y) {
+    padStick = { x: 0, y: 0 };
+    sendStick(0, 0);
+  }
+}
+
+function pollPad() {
+  const pad = activeGamepad();
+  reportPad(pad);
+  if (!pad) {
+    releasePad();
+    if (sPad.textContent !== 'none') { sPad.textContent = 'none'; sPad.className = ''; }
+    if (sIn.textContent !== 'none') { sIn.textContent = 'none'; sIn.className = ''; }
+    setPadTest('');
+    // Say it out loud on the page: a pad that the browser cannot see never
+    // fires gamepadconnected, so silence would look like "nothing happens".
+    setPadTip(navigator.getGamepads
+      ? 'No controller seen yet — press a button on it (it has to be paired with '
+        + 'the device you are browsing on).'
+      : 'This browser has no gamepad support — use Chrome, Edge or Firefox.');
+    return;
+  }
+  const map = buttonMapFor(pad);
+  const label = (pad.id || 'pad').replace(/\s*\(.*/, '').slice(0, 22);
+  if (sPad.textContent !== label) { sPad.textContent = label; sPad.className = 'good'; }
+  setPadTip(`Controller: ${pad.id} · mapping: ${pad.mapping || 'non-standard'} · `
+    + `${pad.axes.length} axes, ${pad.buttons.length} buttons`);
+
+  // Show what the pad is actually sending: this is how a pad that is seen but
+  // whose buttons land on unexpected indexes gives itself away.
+  const down = [];
+  for (let i = 0; i < pad.buttons.length; i++) {
+    const b = pad.buttons[i];
+    if (b && (b.pressed || b.value > 0.5)) down.push(i);
+  }
+  const axisBits = [];
+  for (let i = 0; i < Math.min(4, pad.axes.length); i++) {
+    if (Math.abs(pad.axes[i]) > 0.2) axisBits.push(`axis${i}=${pad.axes[i].toFixed(1)}`);
+  }
+  const live = down.map(i => PAD_LABELS[i] || (map[i] ? map[i] + ' (index ' + i + ')' : 'button ' + i))
+    .concat(axisBits).join(' · ');
+  setPadTest(live ? `Her pad is sending: ${live}` : 'Press a button on it to check it reaches this page.');
+  const hud = (down.map(i => PAD_LABELS[i] ? PAD_LABELS[i].split(' ')[0] : (map[i] || 'b' + i))
+    .concat(axisBits.map(a => a.replace('axis', 'ax')))).join(' ') || 'idle';
+  if (sIn.textContent !== hud) {
+    sIn.textContent = hud;
+    sIn.className = hud === 'idle' ? '' : 'good';
+  }
+  const wants = new Set();
+  for (const index of Object.keys(map)) {
+    const button = pad.buttons[Number(index)];
+    if (button && (button.pressed || button.value > 0.5)) wants.add(map[index]);
+  }
+  for (const key of wants) {
+    if (!padHeld.has(key)) { padHeld.add(key); send(key, true, 'pad'); }
+  }
+  for (const key of [...padHeld]) {
+    if (!wants.has(key)) { padHeld.delete(key); send(key, false, 'pad'); }
+  }
+  const stick = stickOf(pad);
+  if (Math.abs(stick.x - padStick.x) > 0.02 || Math.abs(stick.y - padStick.y) > 0.02) {
+    padStick = stick;
+    sendStick(stick.x, stick.y);
+  }
+}
+// Two drivers on purpose: animation frames stop as soon as the tab loses
+// focus (the pad would then never be noticed), while the timer keeps ticking
+// even when it is throttled in the background.
+// A throw inside the poll must never silently switch the pad off (it did:
+// one undefined variable made every tick fail while the keyboard kept working).
+function safePollPad() {
+  try {
+    pollPad();
+  } catch (err) {
+    setPadTest('Controller error: ' + (err && err.message ? err.message : err));
+    if (sIn.textContent !== 'error') { sIn.textContent = 'error'; sIn.className = 'bad'; }
+  }
+}
+
+function padLoop() {
+  safePollPad();
+  requestAnimationFrame(padLoop);
+}
+padLoop();
+setInterval(safePollPad, 250);
+window.addEventListener('gamepadconnected', (ev) => {
+  setPadTip(`Controller: ${ev.gamepad.id} · connected`);
+});
+window.addEventListener('gamepaddisconnected', releasePad);
+// Polling stops while the tab is hidden, so let go of everything then --
+// otherwise a held stick would stay pushed on the host.
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) releasePad();
+});
+
+window.addEventListener('keydown', (e) => {
+  const k = normKey(e);
+  if (k === 'control') {
+    if (ws && ws.readyState === 1) ws.send(JSON.stringify({ t: 'walk', d: 1 }));
+    return;
+  }
+  if (!KEYS.has(k)) return;
+  e.preventDefault();
+  if (e.repeat) return;
+  send(k, true);
+}, { passive: false });
+
+window.addEventListener('keyup', (e) => {
+  const k = normKey(e);
+  if (k === 'control') {
+    if (ws && ws.readyState === 1) ws.send(JSON.stringify({ t: 'walk', d: 0 }));
+    return;
+  }
+  if (!KEYS.has(k)) return;
+  e.preventDefault();
+  send(k, false);
+}, { passive: false });
+
+window.addEventListener('blur', () => {
+  // never leave a key stuck down when the tab loses focus
+  ['w','a','s','d','j','k','e','f','r','q','space','shift','tab','enter','escape',
+   'arrowup','arrowdown','arrowleft','arrowright'].forEach(k => send(k, false));
+  releasePad();
+});
+
+goBtn.addEventListener('click', async () => {
+  goFullscreen();          // inside the click gesture, before anything awaits
+  goBtn.disabled = true;
+  goBtn.textContent = 'Connecting…';
+  errEl.textContent = '';
+  try {
+    connectInput();
+    video.muted = false;
+    video.volume = 1;
+    // https (the public tunnel) must use HLS; ?hls=1 forces it for testing.
+    if (location.protocol === 'https:' || new URLSearchParams(location.search).get('hls') === '1') {
+      await startHls();
+    } else {
+      await startVideo();
+    }
+    document.getElementById('overlay').classList.add('hidden');
+    playerStarted = true;
+    video.focus();
+  } catch (err) {
+    errEl.textContent = String(err.message || err);
+    goBtn.disabled = false;
+    goBtn.textContent = 'Retry';
+  }
+});
+
+// A single click anywhere brings the picture back. Browsers block unmuted
+// autoplay, and a stalled tunnel segment leaves the video paused, so without
+// this the page looks dead: she clicks, nothing happens, and nothing tells her
+// that a click is exactly what is needed.
+document.addEventListener('click', () => {
+  if (!playerStarted || !(video.paused || video.readyState < 2)) return;
+  video.play().catch(() => {});
+  if (window.__hls) { try { window.__hls.startLoad(); } catch (_) {} }
+});
+setInterval(() => {
+  if (!playerStarted) return;
+  tapEl.classList.toggle('hidden', !(video.paused || video.readyState < 2));
+}, 1000);
+
+// --- fullscreen ---------------------------------------------------------
+// requestFullscreen needs a user gesture, so it is fired straight from the
+// Connect click (before any await) and from the corner button / double click.
+async function goFullscreen() {
+  if (document.fullscreenElement) return;
+  try {
+    await document.documentElement.requestFullscreen({ navigationUI: 'hide' });
+    return;
+  } catch (_) { /* fall through */ }
+  try {
+    await document.getElementById('stage').requestFullscreen();
+    return;
+  } catch (_) { /* fall through */ }
+  if (video.webkitEnterFullscreen) {          // iPhone/iPad Safari
+    try { video.webkitEnterFullscreen(); } catch (_) {}
+  }
+}
+
+async function toggleFullscreen() {
+  if (document.fullscreenElement) {
+    await document.exitFullscreen().catch(() => {});
+    return;
+  }
+  await goFullscreen();
+}
+
+fsBtn.addEventListener('click', toggleFullscreen);
+document.addEventListener('dblclick', toggleFullscreen);
+</script>
+</body>
+</html>

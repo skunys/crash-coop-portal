@@ -1,0 +1,13 @@
+[10:58:53] portal: Crash: Mind over Mutant co-op portal
+[10:58:53] portal: token = k7Qm2xT9rL4pW8vZ
+[10:58:53] pad: virtual Xbox 360 pad created for player 3
+[10:58:53] mediamtx: starting
+[10:58:53] mediamtx: RTSP ready on 127.0.0.1:8554
+[10:58:53] capture: game window hwnd 8980600
+[10:58:53] capture: mode 1 of 3
+[10:58:53] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i hwnd=8980600 -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:58:53] portal: page at   http://127.0.0.1:8080/?k=k7Qm2xT9rL4pW8vZ
+[10:58:53] portal: LAN         http://192.168.2.101:8080/?k=k7Qm2xT9rL4pW8vZ
+[10:58:53] portal: PUBLIC      http://93.86.197.32:8080/?k=k7Qm2xT9rL4pW8vZ
+[10:58:53] portal:            (works from outside only with the router forwarding TCP 8080 and UDP 8189 to this PC)
+[10:58:53] ws: friend connected from 127.0.0.1 (1 active)

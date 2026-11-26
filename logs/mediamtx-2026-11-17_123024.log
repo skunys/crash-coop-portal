@@ -1,0 +1,51 @@
+2026/11/17 12:30:24 INF MediaMTX v1.21.4, windows, amd64
+2026/11/17 12:30:24 INF configuration loaded from G:\Crash game\portal\mediamtx-windows.yml
+2026/11/17 12:30:24 INF [RTSP] started with listeners on 127.0.0.1:8554 (TCP/RTSP)
+2026/11/17 12:30:24 INF [HLS] started with listener on 127.0.0.1:8888 (TCP/HTTP)
+2026/11/17 12:30:24 INF [WebRTC] started with listeners on :8889 (TCP/HTTP), :8189 (UDP/ICE)
+2026/11/17 12:30:24 INF [MoQ] started with listeners on :8892 (TCP/HTTP2), :8892 (UDP/HTTP3), :8893 (UDP/QUIC)
+2026/11/17 12:30:25 INF [RTSP] [conn 127.0.0.1:11092] opened
+2026/11/17 12:30:25 INF [RTSP] [conn 127.0.0.1:11092] closed: EOF
+2026/11/17 12:30:25 INF [RTSP] [conn 127.0.0.1:11094] opened
+2026/11/17 12:30:25 INF [RTSP] [session d526418d] created by 127.0.0.1:11094
+2026/11/17 12:30:25 INF [path game] stream is available and online, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 12:30:25 INF [RTSP] [session d526418d] is publishing to path 'game'
+2026/11/17 12:30:25 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 12:31:07 INF [RTSP] [conn 127.0.0.1:46352] opened
+2026/11/17 12:31:07 INF [RTSP] [session 15c12555] created by 127.0.0.1:46352
+2026/11/17 12:31:07 INF [RTSP] [session 15c12555] is reading from path 'game', with TCP, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 12:31:09 INF [RTSP] [session 15c12555] destroyed: torn down by 127.0.0.1:46352
+2026/11/17 12:31:09 INF [RTSP] [conn 127.0.0.1:46352] closed: read tcp 127.0.0.1:8554->127.0.0.1:46352: wsarecv: An existing connection was forcibly closed by the remote host.
+2026/11/17 12:31:19 INF [HLS] [session 0eb6915a] created by 127.0.0.1:14371
+2026/11/17 12:31:19 INF [HLS] [muxer game] created (requested by 127.0.0.1:14371)
+2026/11/17 12:31:19 INF [HLS] [muxer game] is converting into HLS, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 12:31:19 INF [HLS] [session 0eb6915a] is reading from muxer 'game'
+2026/11/17 12:31:41 INF [HLS] [session 73cce3cf] created by 127.0.0.1:49496
+2026/11/17 12:31:41 INF [HLS] [session 73cce3cf] is reading from muxer 'game'
+2026/11/17 12:31:49 INF [HLS] [session 0eb6915a] closed: inactive
+2026/11/17 12:32:03 INF [HLS] [session 9be04c3e] created by 127.0.0.1:39243
+2026/11/17 12:32:03 INF [HLS] [session 9be04c3e] is reading from muxer 'game'
+2026/11/17 12:32:18 INF [HLS] [session 0c6b49ab] created by 127.0.0.1:56707
+2026/11/17 12:32:18 INF [HLS] [session 0c6b49ab] is reading from muxer 'game'
+2026/11/17 12:32:26 INF [HLS] [session 3f7694a6] created by 127.0.0.1:19743
+2026/11/17 12:32:26 INF [HLS] [session 3f7694a6] is reading from muxer 'game'
+2026/11/17 12:32:34 INF [HLS] [session 946be6ec] created by 127.0.0.1:29829
+2026/11/17 12:32:34 INF [HLS] [session 946be6ec] is reading from muxer 'game'
+2026/11/17 12:32:43 INF [HLS] [session 9be04c3e] closed: inactive
+2026/11/17 12:32:58 INF [HLS] [session 0c6b49ab] closed: inactive
+2026/11/17 12:33:06 INF [HLS] [session 3f7694a6] closed: inactive
+2026/11/17 12:33:14 INF [HLS] [session 946be6ec] closed: inactive
+2026/11/17 12:34:11 INF [HLS] [session 73cce3cf] closed: inactive
+2026/11/17 12:34:35 INF [HLS] [session 66b48658] created by 127.0.0.1:25920
+2026/11/17 12:34:35 INF [HLS] [session 66b48658] is reading from muxer 'game'
+2026/11/17 12:35:15 INF [HLS] [session 66b48658] closed: inactive
+2026/11/17 12:35:39 INF [HLS] [muxer game] destroyed: not used anymore
+2026/11/17 12:37:44 INF reloading configuration (file changed)
+2026/11/17 12:37:44 ERR 'hlsSegmentCount' must be at least 7 when 'hlsVariant' is 'lowLatency'
+2026/11/17 12:37:44 INF [MoQ] closing
+2026/11/17 12:37:44 INF [WebRTC] closing
+2026/11/17 12:37:44 INF [HLS] closing
+2026/11/17 12:37:44 INF [RTSP] closing
+2026/11/17 12:37:44 INF [RTSP] [conn 127.0.0.1:11094] closed: terminated
+2026/11/17 12:37:44 INF [RTSP] [session d526418d] destroyed: terminated
+2026/11/17 12:37:44 INF waiting for running hooks

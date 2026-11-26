@@ -1,0 +1,25 @@
+[11:29:11] portal: Crash: Mind over Mutant co-op portal
+[11:29:11] portal: token = k7Qm2xT9rL4pW8vZ
+[11:29:11] pad: virtual Xbox 360 pad created for player 3
+[11:29:11] mediamtx: starting
+[11:29:12] mediamtx: RTSP ready on 127.0.0.1:8554
+[11:29:12] capture: game window hwnd 8980600
+[11:29:12] capture: mode 1 of 3
+[11:29:12] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i hwnd=8980600 -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[11:29:12] portal: page at   http://127.0.0.1:8080/?k=k7Qm2xT9rL4pW8vZ
+[11:29:12] portal: LAN         http://192.168.2.101:8080/?k=k7Qm2xT9rL4pW8vZ
+[11:29:12] portal: PUBLIC      http://93.86.197.32:8080/?k=k7Qm2xT9rL4pW8vZ
+[11:29:12] portal:            (works from outside only with the router forwarding TCP 8080 and UDP 8189 to this PC)
+[11:29:12] portal:            no router work? use the tunnel link printed below
+[11:29:12] tunnel: starting cloudflared quick tunnel
+[11:29:13] ws: friend connected from 127.0.0.1 (1 active)
+[11:29:18] tunnel: PUBLIC https://investigated-partial-craps-edition.trycloudflare.com/?k=k7Qm2xT9rL4pW8vZ
+[11:29:18] tunnel: send that link -- nothing to install on her side
+[11:31:34] ws: friend connected from 127.0.0.1 (2 active)
+[11:31:51] ws: key down w
+[11:31:51] ws: key down w
+[11:31:51] ws: key down a
+[11:31:51] ws: key down s
+[11:31:51] ws: key down d
+[11:31:52] ws: key down a
+[11:32:04] ws: friend disconnected (1 active)

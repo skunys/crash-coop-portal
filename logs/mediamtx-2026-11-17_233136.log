@@ -1,0 +1,33 @@
+2026/11/17 23:31:41 INF MediaMTX v1.21.4, windows, amd64
+2026/11/17 23:31:41 INF configuration loaded from G:\Crash game\portal\mediamtx-windows.yml
+2026/11/17 23:31:41 INF [RTSP] started with listeners on 127.0.0.1:8554 (TCP/RTSP)
+2026/11/17 23:31:41 INF [HLS] started with listener on 127.0.0.1:8888 (TCP/HTTP)
+2026/11/17 23:31:41 INF [WebRTC] started with listeners on :8889 (TCP/HTTP), :8189 (UDP/ICE)
+2026/11/17 23:31:41 INF [RTSP] [conn 127.0.0.1:20413] opened
+2026/11/17 23:31:41 INF [RTSP] [conn 127.0.0.1:20413] closed: EOF
+2026/11/17 23:31:41 INF [MoQ] started with listeners on :8892 (TCP/HTTP2), :8892 (UDP/HTTP3), :8893 (UDP/QUIC)
+2026/11/17 23:31:43 INF [RTSP] [conn 127.0.0.1:15168] opened
+2026/11/17 23:31:50 INF [RTSP] [session c117fd5b] created by 127.0.0.1:15168
+2026/11/17 23:31:59 INF [path game] stream is available and online, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 23:32:02 INF [RTSP] [session c117fd5b] is publishing to path 'game'
+2026/11/17 23:32:05 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 23:33:58 INF [HLS] [session 42fe9294] created by 127.0.0.1:44570
+2026/11/17 23:33:58 INF [HLS] [muxer game] created (requested by 127.0.0.1:44570)
+2026/11/17 23:33:58 INF [HLS] [muxer game] is converting into HLS, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 23:33:58 INF [HLS] [session 42fe9294] is reading from muxer 'game'
+2026/11/17 23:34:20 INF [HLS] [session 10aaf22c] created by 127.0.0.1:42502
+2026/11/17 23:34:20 INF [HLS] [session 10aaf22c] is reading from muxer 'game'
+2026/11/17 23:34:26 INF [HLS] [session 26f97af7] created by 127.0.0.1:57043
+2026/11/17 23:34:26 INF [HLS] [session 26f97af7] is reading from muxer 'game'
+2026/11/17 23:34:38 INF [HLS] [session 42fe9294] closed: inactive
+2026/11/17 23:35:00 INF [HLS] [session 10aaf22c] closed: inactive
+2026/11/17 23:35:06 INF [HLS] [session 26f97af7] closed: inactive
+2026/11/17 23:35:38 INF [HLS] [muxer game] destroyed: not used anymore
+2026/11/17 23:37:04 INF [HLS] [session 8649ce7b] created by 127.0.0.1:10909
+2026/11/17 23:37:04 INF [HLS] [muxer game] created (requested by 127.0.0.1:10909)
+2026/11/17 23:37:04 INF [HLS] [muxer game] is converting into HLS, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 23:37:04 INF [HLS] [session 8649ce7b] is reading from muxer 'game'
+2026/11/17 23:37:44 INF [HLS] [session 8649ce7b] closed: inactive
+2026/11/17 23:37:45 INF [RTSP] [session c117fd5b] destroyed: torn down by 127.0.0.1:15168
+2026/11/17 23:37:45 INF [HLS] [muxer game] destroyed: terminated
+2026/11/17 23:37:45 INF [RTSP] [conn 127.0.0.1:15168] closed: read tcp 127.0.0.1:8554->127.0.0.1:15168: wsarecv: An established connection was aborted by the software in your host machine.

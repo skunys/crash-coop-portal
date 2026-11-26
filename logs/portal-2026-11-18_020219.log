@@ -1,0 +1,44 @@
+[02:02:19] portal: Crash: Mind over Mutant co-op portal
+[02:02:19] portal: token = k7Qm2xT9rL4pW8vZ
+[02:02:19] pad: virtual Xbox 360 pad created for player 3
+[02:02:19] mediamtx: starting
+[02:02:19] mediamtx: RTSP ready on 127.0.0.1:8554
+[02:02:20] capture: game window hwnd 33296232
+[02:02:20] capture: mode 1 of 3 | audio: True
+[02:02:20] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -f gdigrab -framerate 60 -i hwnd=33296232 -f s16le -ar 48000 -ac 2 -i pipe:0 -vf scale=1280:-2 -map 0:v:0 -map 1:a:0 -c:a aac -b:a 128k -ar 48000 -af aresample=async=1 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 6M -maxrate 6M -bufsize 6M -g 12 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[02:02:20] portal: page at   http://127.0.0.1:8080/?k=k7Qm2xT9rL4pW8vZ
+[02:02:20] portal: LAN         http://192.168.2.101:8080/?k=k7Qm2xT9rL4pW8vZ
+[02:02:20] audio: loopback of Headphones (HyperX Cloud III Wireless)
+[02:02:20] portal: PUBLIC      http://93.86.197.32:8080/?k=k7Qm2xT9rL4pW8vZ
+[02:02:20] portal:            (works from outside only with the router forwarding TCP 8080 and UDP 8189 to this PC)
+[02:02:20] portal:            no router work? use the tunnel link printed below
+[02:02:20] tunnel: starting cloudflared quick tunnel
+[02:02:26] tunnel: PUBLIC https://spots-computers-immunology-past.trycloudflare.com/?k=k7Qm2xT9rL4pW8vZ
+[02:02:26] tunnel: send that link -- nothing to install on her side
+[02:03:15] ws: friend connected from 127.0.0.1 (1 active)
+[02:03:15] focus: keeping the game in the foreground for player 2
+[02:03:28] ws: key down d
+[02:03:59] ws: key down space
+[02:04:09] ws: key down shift
+[02:04:09] ws: key down enter
+[02:04:58] ws: friend disconnected (0 active)
+[02:05:07] ws: friend connected from 127.0.0.1 (1 active)
+[02:06:12] ws: friend connected from 127.0.0.1 (2 active)
+[02:07:31] ws: key down enter
+[02:07:31] ws: key down enter
+[02:10:19] ws: friend disconnected (1 active)
+[02:11:45] ws: friend disconnected (0 active)
+[02:12:12] ws: friend connected from 127.0.0.1 (1 active)
+[02:12:22] ws: friend disconnected (0 active)
+[02:12:23] ws: friend connected from 127.0.0.1 (1 active)
+[02:12:58] ws: friend connected from 127.0.0.1 (2 active)
+[02:13:20] ws: key down enter
+[02:13:20] ws: key down enter
+[02:13:20] ws: key down enter
+[02:13:20] ws: key down enter
+[02:13:21] ws: key down enter
+[02:13:22] ws: key down enter
+[02:13:22] ws: key down enter
+[02:13:22] ws: key down enter
+[02:13:23] ws: key down enter
+[02:13:23] ws: key down enter

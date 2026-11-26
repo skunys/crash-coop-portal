@@ -1,0 +1,24 @@
+[10:41:21] portal: Crash: Mind over Mutant co-op portal
+[10:41:21] portal: token = k7Qm2xT9rL4pW8vZ
+[10:41:21] pad: virtual Xbox 360 pad created for player 3
+[10:41:21] mediamtx: starting
+[10:41:22] mediamtx: RTSP ready on 127.0.0.1:8554
+[10:41:22] capture: game window hwnd 1775404
+[10:41:22] capture: mode 1 of 3
+[10:41:22] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i hwnd=1775404 -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:41:22] portal: page at  http://127.0.0.1:8080/?k=k7Qm2xT9rL4pW8vZ
+[10:41:22] portal: also at  http://169.254.44.149:8080/?k=k7Qm2xT9rL4pW8vZ
+[10:41:22] portal: also at  http://169.254.83.107:8080/?k=k7Qm2xT9rL4pW8vZ
+[10:41:22] portal: also at  http://192.168.2.101:8080/?k=k7Qm2xT9rL4pW8vZ
+[10:42:43] ws: friend connected from 127.0.0.1 (1 active)
+[10:44:14] ws: key down w
+[10:44:15] ws: key down d
+[10:44:15] ws: key down s
+[10:44:15] ws: key down a
+[10:44:15] ws: key down w
+[10:44:15] ws: key down d
+[10:44:16] ws: key down shift
+[10:50:52] capture: ffmpeg exited with 0; trying the next mode
+[10:50:53] capture: the game window was not found -- capturing the desktop instead
+[10:50:53] capture: mode 2 of 2
+[10:50:53] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i desktop -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game

@@ -1,0 +1,53 @@
+# MediaMTX config for the Crash co-op portal.
+# ffmpeg publishes the game here over RTSP (loopback only); the browser pulls it
+# with WebRTC/WHEP. Everything that would open extra ports is switched off.
+
+logLevel: info
+logDestinations: [stdout]
+
+# RTSP: only our own ffmpeg publishes, on loopback.
+rtsp: true
+rtspAddress: 127.0.0.1:8554
+rtspTransports: [tcp]
+
+# WebRTC: the browser side.
+webrtc: true
+webrtcAddress: :8889
+webrtcLocalUDPAddress: :8189
+webrtcAllowOrigins: ["*"]
+webrtcIPsFromInterfaces: true
+webrtcAdditionalHosts: []
+
+# HLS: the path used when the friend opens the public https tunnel link, where
+# WebRTC's UDP cannot reach us. Served on loopback and reverse-proxied by the
+# portal at /hls/, so it rides the tunnel too.
+#
+# Variant matters: lowLatency/fmp4 put the AAC track in its own rendition, and
+# this muxer's audio rendition keeps emitting empty fragments, which kills the
+# player ("Found no media in msn N of audio playlist" -> fatal mediaError).
+# mpegts muxes video and audio into the *same* segments, so there is one
+# timeline and nothing to get out of step -- and it plays everywhere.
+hls: true
+hlsAddress: 127.0.0.1:8888
+hlsAlwaysRemux: false
+hlsVariant: mpegts
+hlsSegmentCount: 6
+hlsSegmentDuration: 1s
+hlsPartDuration: 200ms
+hlsSegmentMaxSize: 50M
+hlsAllowOrigins: ["*"]
+hlsDirectory: ''
+
+# Not needed.
+rtmp: false
+srt: false
+api: false
+metrics: false
+pprof: false
+playback: false
+
+paths:
+  game:
+    source: publisher
+    # Keep latency low: no recording, no reader buffering tricks needed.
+    rtspTransport: tcp

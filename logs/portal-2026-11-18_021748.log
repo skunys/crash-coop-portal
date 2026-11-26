@@ -1,0 +1,254 @@
+[02:17:48] portal: Crash: Mind over Mutant co-op portal
+[02:17:48] portal: token = k7Qm2xT9rL4pW8vZ (optional -- the address alone is enough)
+[02:17:48] pad: virtual Xbox 360 pad created for player 3
+[02:17:48] mediamtx: starting
+[02:17:48] mediamtx: RTSP ready on 127.0.0.1:8554
+[02:17:48] capture: game window hwnd 33296232
+[02:17:48] capture: mode 1 of 3 | audio: True
+[02:17:48] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -f gdigrab -framerate 60 -i hwnd=33296232 -f s16le -ar 48000 -ac 2 -i pipe:0 -vf scale=1280:-2 -map 0:v:0 -map 1:a:0 -c:a aac -b:a 128k -ar 48000 -af aresample=async=1 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 6M -maxrate 6M -bufsize 6M -g 12 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[02:17:48] portal: page at   http://127.0.0.1:8080/?k=k7Qm2xT9rL4pW8vZ
+[02:17:48] portal: LAN         http://192.168.2.101:8080/?k=k7Qm2xT9rL4pW8vZ
+[02:17:48] audio: loopback of Headphones (HyperX Cloud III Wireless)
+[02:17:48] portal: PUBLIC      http://93.86.197.32:8080/?k=k7Qm2xT9rL4pW8vZ
+[02:17:48] portal:            (works from outside only with the router forwarding TCP 8080 and UDP 8189 to this PC)
+[02:17:48] portal:            no router work? use the tunnel link printed below
+[02:17:48] tunnel: starting cloudflared quick tunnel
+[02:17:54] tunnel: PUBLIC https://staffing-professionals-blanket-tanks.trycloudflare.com/?k=k7Qm2xT9rL4pW8vZ
+[02:17:54] tunnel: send that link -- nothing to install on her side
+[02:18:34] ws: friend connected from 127.0.0.1 (1 active)
+[02:18:34] focus: keeping the game in the foreground for player 2
+[02:19:08] ws: friend connected from 127.0.0.1 (2 active)
+[02:29:00] ws: friend connected from 127.0.0.1 (3 active)
+[02:29:43] ws: friend disconnected (2 active)
+[02:30:09] ws: friend disconnected (1 active)
+[02:31:24] ws: friend connected from 127.0.0.1 (2 active)
+[02:31:35] ws: key down arrowdown
+[02:31:36] ws: key down arrowdown
+[02:31:37] ws: key down s
+[02:31:37] ws: key down a
+[02:31:37] ws: key down s
+[02:31:37] ws: key down d
+[02:31:38] ws: key down a
+[02:31:38] ws: key down s
+[02:31:38] ws: key down d
+[02:31:38] ws: key down a
+[02:31:38] ws: key down s
+[02:31:38] ws: key down w
+[02:31:39] ws: key down a
+[02:31:39] ws: key down d
+[02:31:48] ws: key down s
+[02:31:52] ws: key down a
+[02:32:06] ws: friend connected from 127.0.0.1 (3 active)
+[02:32:27] ws: key down enter
+[02:32:27] ws: key down enter
+[02:32:27] ws: key down s
+[02:32:27] ws: key down d
+[02:32:28] ws: key down f
+[02:32:28] ws: key down w
+[02:32:29] ws: key down w
+[02:32:29] ws: key down q
+[02:32:29] ws: key down w
+[02:32:29] ws: key down e
+[02:32:32] ws: key down s
+[02:32:50] ws: key down d
+[02:32:50] ws: key down s
+[02:32:56] ws: key down d
+[02:32:57] ws: key down a
+[02:32:58] ws: key down s
+[02:32:59] ws: key down d
+[02:33:15] ws: friend disconnected (2 active)
+[02:34:23] ws: key down s
+[02:34:24] ws: key down a
+[02:34:26] ws: key down s
+[02:34:26] ws: key down d
+[02:34:27] ws: key down s
+[02:34:27] ws: key down a
+[02:34:29] ws: key down shift
+[02:34:35] ws: key down shift
+[02:34:35] ws: key down shift
+[02:34:35] ws: key down shift
+[02:34:36] ws: key down shift
+[02:34:36] ws: key down shift
+[02:34:36] ws: key down shift
+[02:34:38] ws: key down shift
+[02:34:38] ws: key down shift
+[02:34:38] ws: key down shift
+[02:34:39] ws: key down shift
+[02:34:39] ws: key down shift
+[02:34:40] ws: key down tab
+[02:34:40] ws: key down tab
+[02:34:40] ws: key down tab
+[02:34:41] ws: key down tab
+[02:34:41] ws: key down tab
+[02:34:41] ws: key down tab
+[02:34:41] ws: key down tab
+[02:34:42] ws: key down tab
+[02:34:42] ws: key down tab
+[02:34:44] ws: key down tab
+[02:36:03] ws: key down escape
+[02:36:04] ws: key down escape
+[02:36:05] ws: key down escape
+[02:36:10] ws: key down escape
+[02:36:20] ws: key down escape
+[02:36:26] ws: key down arrowdown
+[02:36:28] ws: key down arrowdown
+[02:36:29] ws: key down arrowdown
+[02:36:32] ws: key down arrowdown
+[02:36:37] ws: key down arrowdown
+[02:36:38] ws: key down s
+[02:36:40] ws: key down arrowdown
+[02:36:40] ws: key down arrowdown
+[02:36:40] ws: key down arrowdown
+[02:36:41] ws: key down arrowdown
+[02:36:41] ws: key down arrowdown
+[02:36:42] ws: key down arrowdown
+[02:36:42] ws: key down arrowdown
+[02:36:42] ws: key down arrowdown
+[02:36:42] ws: key down arrowdown
+[02:36:43] ws: key down arrowdown
+[02:36:44] ws: key down arrowdown
+[02:36:45] ws: key down arrowdown
+[02:36:48] ws: key down arrowdown
+[02:36:49] ws: key down arrowdown
+[02:36:52] ws: key down s
+[02:36:55] ws: key down s
+[02:36:58] ws: key down s
+[02:37:01] ws: key down w
+[02:37:11] ws: key down w
+[02:37:18] ws: key down enter
+[02:38:59] ws: friend disconnected (1 active)
+[02:39:03] ws: friend connected from 127.0.0.1 (2 active)
+[02:39:53] ws: key down k
+[02:40:10] ws: key down k
+[02:40:13] ws: key down k
+[02:40:24] ws: friend disconnected (1 active)
+[02:40:35] ws: friend connected from 127.0.0.1 (2 active)
+[02:42:04] ws: friend disconnected (1 active)
+[02:42:07] ws: friend connected from 127.0.0.1 (2 active)
+[02:42:14] ws: key down e
+[02:42:31] ws: key down e
+[02:42:43] ws: friend disconnected (1 active)
+[02:43:07] ws: friend connected from 127.0.0.1 (2 active)
+[02:43:35] ws: friend disconnected (1 active)
+[02:43:43] ws: friend connected from 127.0.0.1 (2 active)
+[02:44:00] ws: friend disconnected (1 active)
+[02:44:02] ws: friend connected from 127.0.0.1 (2 active)
+[02:44:08] ws: key down s
+[02:44:09] ws: key down s
+[02:44:09] ws: key down d
+[02:44:10] ws: key down s
+[02:44:10] ws: key down s
+[02:44:11] ws: key down s
+[02:44:11] ws: key down d
+[02:44:12] ws: key down a
+[02:44:13] ws: key down d
+[02:44:13] ws: key down s
+[02:44:14] ws: key down s
+[02:44:15] ws: key down s
+[02:44:21] ws: key down s
+[02:44:21] ws: key down w
+[02:44:25] ws: key down shift
+[02:44:29] ws: key down shift
+[02:44:30] ws: key down shift
+[02:44:30] ws: key down shift
+[02:44:31] ws: key down shift
+[02:44:31] ws: key down shift
+[02:44:32] ws: key down tab
+[02:44:32] ws: key down tab
+[02:44:32] ws: key down tab
+[02:44:32] ws: key down tab
+[02:44:33] ws: key down tab
+[02:44:41] ws: key down d
+[02:44:42] ws: key down d
+[02:44:44] ws: key down d
+[02:44:45] ws: key down w
+[02:44:46] ws: key down s
+[02:44:47] ws: key down s
+[02:44:47] ws: key down s
+[02:44:48] ws: key down s
+[02:44:52] ws: key down w
+[02:44:54] ws: key down s
+[02:44:55] ws: key down d
+[02:44:55] ws: key down s
+[02:44:57] ws: key down s
+[02:45:06] ws: key down escape
+[02:45:10] ws: key down escape
+[02:45:23] ws: key down a
+[02:45:28] ws: key down a
+[02:45:30] ws: key down a
+[02:45:33] ws: key down s
+[02:45:35] ws: key down a
+[02:45:35] ws: key down a
+[02:45:36] ws: key down a
+[02:45:36] ws: key down a
+[02:45:37] ws: key down a
+[02:45:38] ws: key down w
+[02:45:38] ws: key down s
+[02:45:39] ws: key down d
+[02:45:39] ws: key down s
+[02:45:39] ws: key down a
+[02:45:40] ws: key down s
+[02:45:40] ws: key down d
+[02:45:40] ws: key down s
+[02:45:41] ws: key down a
+[02:45:41] ws: key down s
+[02:45:41] ws: key down d
+[02:45:42] ws: key down s
+[02:45:42] ws: key down a
+[02:45:42] ws: key down d
+[02:45:42] ws: key down a
+[02:45:43] ws: key down d
+[02:45:43] ws: key down s
+[02:45:43] ws: key down a
+[02:45:44] ws: key down d
+[02:45:44] ws: key down a
+[02:45:44] ws: key down s
+[02:45:44] ws: key down d
+[02:45:44] ws: key down s
+[02:45:45] ws: key down w
+[02:45:45] ws: key down w
+[02:45:46] ws: key down s
+[02:45:47] ws: key down d
+[02:45:47] ws: key down a
+[02:45:47] ws: key down s
+[02:45:47] ws: key down d
+[02:45:50] ws: key down a
+[02:45:50] ws: key down s
+[02:45:51] ws: key down w
+[02:45:51] ws: key down w
+[02:45:51] ws: key down w
+[02:45:51] ws: key down w
+[02:45:52] ws: key down s
+[02:45:52] ws: key down s
+[02:45:52] ws: key down s
+[02:45:52] ws: key down s
+[02:45:53] ws: key down s
+[02:45:53] ws: key down d
+[02:46:00] ws: key down s
+[02:46:01] ws: key down d
+[02:46:01] ws: key down a
+[02:46:01] ws: key down d
+[02:46:02] ws: key down w
+[02:46:04] ws: key down d
+[02:46:10] ws: key down d
+[02:46:12] ws: key down w
+[02:46:13] ws: key down d
+[02:46:13] ws: key down s
+[02:46:14] ws: key down d
+[02:46:14] ws: key down w
+[02:46:15] ws: key down w
+[02:46:15] ws: key down w
+[02:46:15] ws: key down w
+[02:46:15] ws: key down w
+[02:46:16] ws: key down w
+[02:46:21] ws: key down d
+[02:46:22] ws: key down a
+[02:46:30] ws: key down w
+[02:46:31] ws: key down w
+[02:46:31] ws: key down w
+[02:46:31] ws: key down w
+[02:46:31] ws: key down w
+[02:46:32] ws: key down w
+[02:46:34] ws: key down tab
+[02:46:35] ws: key down tab
+[02:46:37] ws: key down shift

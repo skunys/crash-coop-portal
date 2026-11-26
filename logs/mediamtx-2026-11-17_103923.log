@@ -1,0 +1,4 @@
+2026/11/17 10:39:23 INF MediaMTX v1.21.4, windows, amd64
+2026/11/17 10:39:23 INF configuration loaded from G:\Crash game\portal\mediamtx-windows.yml
+2026/11/17 10:39:23 ERR listen tcp 127.0.0.1:8554: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2026/11/17 10:39:23 INF waiting for running hooks

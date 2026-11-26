@@ -1,0 +1,15 @@
+2026/11/17 23:40:13 INF MediaMTX v1.21.4, windows, amd64
+2026/11/17 23:40:13 INF configuration loaded from G:\Crash game\portal\mediamtx-windows.yml
+2026/11/17 23:40:13 INF [RTSP] started with listeners on 127.0.0.1:8554 (TCP/RTSP)
+2026/11/17 23:40:13 INF [HLS] started with listener on 127.0.0.1:8888 (TCP/HTTP)
+2026/11/17 23:40:13 INF [WebRTC] started with listeners on :8889 (TCP/HTTP), :8189 (UDP/ICE)
+2026/11/17 23:40:13 INF [MoQ] started with listeners on :8892 (TCP/HTTP2), :8892 (UDP/HTTP3), :8893 (UDP/QUIC)
+2026/11/17 23:40:13 INF [RTSP] [conn 127.0.0.1:34410] opened
+2026/11/17 23:40:13 INF [RTSP] [conn 127.0.0.1:34410] closed: EOF
+2026/11/17 23:40:14 INF [RTSP] [conn 127.0.0.1:34412] opened
+2026/11/17 23:40:14 INF [RTSP] [session 3efbafd3] created by 127.0.0.1:34412
+2026/11/17 23:40:14 INF [path game] stream is available and online, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 23:40:14 INF [RTSP] [session 3efbafd3] is publishing to path 'game'
+2026/11/17 23:40:14 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 23:41:48 INF [RTSP] [session 3efbafd3] destroyed: torn down by 127.0.0.1:34412
+2026/11/17 23:41:48 INF [RTSP] [conn 127.0.0.1:34412] closed: read tcp 127.0.0.1:8554->127.0.0.1:34412: wsarecv: An established connection was aborted by the software in your host machine.

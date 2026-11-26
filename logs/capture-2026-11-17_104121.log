@@ -1,0 +1,7 @@
+[in#0/gdigrab @ 000001fa77b7d280] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[vf#0:0 @ 000001fa79af8340] More than 1000 frames duplicated
+[in#0/gdigrab @ 000001fa77b7d280] Failed to capture image (error 8)
+[in#0/gdigrab @ 000001fa77b7ccc0] Error during demuxing: I/O error
+[in#0/gdigrab @ 0000017ac012d280] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[vf#0:0 @ 0000017ac01f9180] More than 1000 frames duplicated
+[vf#0:0 @ 0000017ac01f9180] More than 10000 frames duplicated

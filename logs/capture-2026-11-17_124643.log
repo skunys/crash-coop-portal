@@ -1,0 +1,4 @@
+[in#0/gdigrab @ 0000024fb2b927c0] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[aist#1:0/pcm_s16le @ 0000024fb2baf3c0] Guessed Channel Layout: stereo
+[vf#0:0 @ 0000024fb2bdcb80] More than 1000 frames duplicated
+[vf#0:0 @ 0000024fb2bdcb80] More than 10000 frames duplicated

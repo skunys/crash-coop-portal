@@ -1,0 +1,8 @@
+[in#0/gdigrab @ 000001a3bf0ed440] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[vf#0:0 @ 000001a3bf19c400] More than 1000 frames duplicated
+[rtsp @ 000001a3bf188b00] Failed reading RTSP data: Error number -10054 occurred
+[vost#0:0/h264_nvenc @ 000001a3bf195780] Error submitting a packet to the muxer: Broken pipe
+    Last message repeated 1 times
+[out#0/rtsp @ 000001a3bf109180] Error muxing a packet
+[out#0/rtsp @ 000001a3bf109180] Task finished with error code: -32 (Broken pipe)
+[out#0/rtsp @ 000001a3bf109180] Terminating thread with return code -32 (Broken pipe)

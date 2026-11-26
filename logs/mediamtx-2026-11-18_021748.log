@@ -1,0 +1,49 @@
+2026/11/18 02:17:48 INF MediaMTX v1.21.4, windows, amd64
+2026/11/18 02:17:48 INF configuration loaded from G:\Crash game\portal\mediamtx-windows.yml
+2026/11/18 02:17:48 INF [RTSP] started with listeners on 127.0.0.1:8554 (TCP/RTSP)
+2026/11/18 02:17:48 INF [HLS] started with listener on 127.0.0.1:8888 (TCP/HTTP)
+2026/11/18 02:17:48 INF [WebRTC] started with listeners on :8889 (TCP/HTTP), :8189 (UDP/ICE)
+2026/11/18 02:17:48 INF [MoQ] started with listeners on :8892 (TCP/HTTP2), :8892 (UDP/HTTP3), :8893 (UDP/QUIC)
+2026/11/18 02:17:48 INF [RTSP] [conn 127.0.0.1:30016] opened
+2026/11/18 02:17:48 INF [RTSP] [conn 127.0.0.1:30016] closed: EOF
+2026/11/18 02:17:48 INF [RTSP] [conn 127.0.0.1:37652] opened
+2026/11/18 02:17:48 INF [RTSP] [session 59124915] created by 127.0.0.1:37652
+2026/11/18 02:17:48 INF [path game] stream is available and online, 2 tracks (H264, MPEG-4 Audio)
+2026/11/18 02:17:48 INF [RTSP] [session 59124915] is publishing to path 'game'
+2026/11/18 02:17:48 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/18 02:18:17 INF [HLS] [session f7d3463f] created by 127.0.0.1:48905
+2026/11/18 02:18:17 INF [HLS] [muxer game] created (requested by 127.0.0.1:48905)
+2026/11/18 02:18:17 INF [HLS] [muxer game] is converting into HLS, 2 tracks (H264, MPEG-4 Audio)
+2026/11/18 02:18:17 INF [HLS] [session f7d3463f] is reading from muxer 'game'
+2026/11/18 02:18:34 INF [HLS] [session 8415bc71] created by 127.0.0.1:60187
+2026/11/18 02:18:34 INF [HLS] [session 8415bc71] is reading from muxer 'game'
+2026/11/18 02:18:47 INF [HLS] [session f7d3463f] closed: inactive
+2026/11/18 02:19:08 INF [HLS] [session 1f8ab552] created by 127.0.0.1:4485
+2026/11/18 02:19:08 INF [HLS] [session 1f8ab552] is reading from muxer 'game'
+2026/11/18 02:28:59 INF [HLS] [session f4ff4672] created by 127.0.0.1:40959
+2026/11/18 02:28:59 INF [HLS] [session f4ff4672] is reading from muxer 'game'
+2026/11/18 02:30:19 INF [HLS] [session f4ff4672] closed: inactive
+2026/11/18 02:30:44 INF [HLS] [session 8415bc71] closed: inactive
+2026/11/18 02:31:24 INF [HLS] [session 3297a155] created by 127.0.0.1:43905
+2026/11/18 02:31:24 INF [HLS] [session 3297a155] is reading from muxer 'game'
+2026/11/18 02:32:06 INF [HLS] [session e03dce5d] created by 127.0.0.1:23421
+2026/11/18 02:32:06 INF [HLS] [session e03dce5d] is reading from muxer 'game'
+2026/11/18 02:33:46 INF [HLS] [session e03dce5d] closed: inactive
+2026/11/18 02:39:03 INF [HLS] [session e88c1485] created by 127.0.0.1:35482
+2026/11/18 02:39:03 INF [HLS] [session e88c1485] is reading from muxer 'game'
+2026/11/18 02:39:38 INF [HLS] [session 1f8ab552] closed: inactive
+2026/11/18 02:40:35 INF [HLS] [session 2a8ead1d] created by 127.0.0.1:22461
+2026/11/18 02:40:35 INF [HLS] [session 2a8ead1d] is reading from muxer 'game'
+2026/11/18 02:40:53 INF [HLS] [session e88c1485] closed: inactive
+2026/11/18 02:42:07 INF [HLS] [session 974995b7] created by 127.0.0.1:13030
+2026/11/18 02:42:07 INF [HLS] [session 974995b7] is reading from muxer 'game'
+2026/11/18 02:42:35 INF [HLS] [session 2a8ead1d] closed: inactive
+2026/11/18 02:43:07 INF [HLS] [session be2e7824] created by 127.0.0.1:53992
+2026/11/18 02:43:07 INF [HLS] [session be2e7824] is reading from muxer 'game'
+2026/11/18 02:43:17 INF [HLS] [session 974995b7] closed: inactive
+2026/11/18 02:43:43 INF [HLS] [session 0517b10a] created by 127.0.0.1:47562
+2026/11/18 02:43:43 INF [HLS] [session 0517b10a] is reading from muxer 'game'
+2026/11/18 02:44:02 INF [HLS] [session ab5a7435] created by 127.0.0.1:14874
+2026/11/18 02:44:02 INF [HLS] [session ab5a7435] is reading from muxer 'game'
+2026/11/18 02:44:07 INF [HLS] [session be2e7824] closed: inactive
+2026/11/18 02:44:34 INF [HLS] [session 3297a155] closed: inactive

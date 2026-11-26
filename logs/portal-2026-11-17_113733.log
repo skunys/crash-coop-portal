@@ -1,0 +1,387 @@
+[11:37:33] portal: Crash: Mind over Mutant co-op portal
+[11:37:33] portal: token = k7Qm2xT9rL4pW8vZ
+[11:37:33] pad: virtual Xbox 360 pad created for player 3
+[11:37:33] mediamtx: starting
+[11:37:34] mediamtx: RTSP ready on 127.0.0.1:8554
+[11:37:34] capture: game window hwnd 8980600
+[11:37:34] capture: mode 1 of 3
+[11:37:34] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i hwnd=8980600 -vf scale=1280:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 6M -maxrate 6M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[11:37:34] portal: page at   http://127.0.0.1:8080/?k=k7Qm2xT9rL4pW8vZ
+[11:37:34] portal: LAN         http://192.168.2.101:8080/?k=k7Qm2xT9rL4pW8vZ
+[11:37:34] portal: PUBLIC      http://93.86.197.32:8080/?k=k7Qm2xT9rL4pW8vZ
+[11:37:34] portal:            (works from outside only with the router forwarding TCP 8080 and UDP 8189 to this PC)
+[11:37:34] portal:            no router work? use the tunnel link printed below
+[11:37:34] tunnel: starting cloudflared quick tunnel
+[11:37:34] ws: friend connected from 127.0.0.1 (1 active)
+[11:37:39] tunnel: PUBLIC https://bin-supply-tuner-leading.trycloudflare.com/?k=k7Qm2xT9rL4pW8vZ
+[11:37:39] tunnel: send that link -- nothing to install on her side
+[11:38:41] ws: friend connected from 127.0.0.1 (2 active)
+[11:38:47] ws: key down w
+[11:38:51] ws: key down w
+[11:38:51] ws: key down s
+[11:38:51] ws: key down a
+[11:38:52] ws: key down s
+[11:38:52] ws: key down d
+[11:38:52] ws: key down w
+[11:39:17] ws: friend disconnected (1 active)
+[11:39:34] ws: friend connected from 127.0.0.1 (2 active)
+[11:39:37] ws: key down w
+[11:39:37] ws: key down w
+[11:39:43] ws: key down w
+[11:39:43] ws: key down a
+[11:39:43] ws: key down s
+[11:40:14] ws: key down d
+[11:40:14] ws: key down w
+[11:40:15] ws: key down a
+[11:40:15] ws: key down s
+[11:40:15] ws: key down d
+[11:40:16] ws: key down w
+[11:40:16] ws: key down a
+[11:40:18] ws: key down w
+[11:40:20] ws: key down d
+[11:40:20] ws: key down w
+[11:40:20] ws: key down a
+[11:40:20] ws: key down d
+[11:40:21] ws: key down w
+[11:40:21] ws: key down a
+[11:40:21] ws: key down shift
+[11:40:27] ws: key down w
+[11:40:28] ws: key down a
+[11:41:55] ws: friend disconnected (1 active)
+[11:41:59] ws: friend connected from 127.0.0.1 (2 active)
+[11:42:10] ws: key down w
+[11:42:13] ws: key down w
+[11:42:13] ws: key down a
+[11:42:13] ws: key down e
+[11:42:14] ws: key down w
+[11:42:14] ws: key down a
+[11:42:16] ws: friend disconnected (1 active)
+[11:42:18] ws: friend connected from 127.0.0.1 (2 active)
+[11:42:20] ws: key down d
+[11:42:20] ws: key down w
+[11:42:20] ws: key down a
+[11:42:21] ws: key down d
+[11:42:21] ws: key down j
+[11:42:22] ws: key down j
+[11:42:22] ws: key down k
+[11:42:22] ws: key down k
+[11:42:23] ws: key down j
+[11:42:24] ws: key down j
+[11:42:24] ws: key down j
+[11:42:24] ws: key down j
+[11:42:25] ws: key down j
+[11:42:25] ws: key down j
+[11:42:25] ws: key down j
+[11:42:26] ws: key down j
+[11:42:26] ws: key down j
+[11:42:27] ws: key down f
+[11:42:29] ws: key down w
+[11:42:29] ws: key down a
+[11:42:30] ws: key down d
+[11:42:30] ws: key down w
+[11:42:31] ws: key down d
+[11:42:31] ws: key down s
+[11:51:55] ws: key down escape
+[11:51:56] ws: key down escape
+[11:52:23] ws: key down d
+[11:52:23] ws: key down s
+[11:52:23] ws: key down a
+[11:52:23] ws: key down w
+[11:52:23] ws: key down a
+[11:52:23] ws: key down d
+[11:52:25] ws: key down w
+[11:52:29] ws: key down w
+[11:52:30] ws: key down a
+[11:52:30] ws: key down d
+[11:52:31] ws: key down w
+[11:52:34] ws: key down arrowright
+[11:52:34] ws: key down arrowright
+[11:52:34] ws: key down arrowup
+[11:52:35] ws: key down arrowleft
+[11:52:35] ws: key down w
+[11:54:39] ws: friend connected from 127.0.0.1 (3 active)
+[11:54:39] ws: key down space
+[11:54:39] ws: key down space
+[11:54:40] ws: key down space
+[11:54:40] ws: key down arrowdown
+[11:54:41] ws: friend disconnected (2 active)
+[11:55:35] ws: key down j
+[11:55:36] ws: key down j
+[11:55:37] ws: key down j
+[11:55:38] ws: key down j
+[11:55:39] ws: key down j
+[11:55:39] ws: key down k
+[11:55:39] ws: key down j
+[11:55:40] ws: key down j
+[11:55:40] ws: key down k
+[11:55:40] ws: key down j
+[11:55:41] ws: key down j
+[11:55:41] ws: key down j
+[11:55:41] ws: key down j
+[11:55:42] ws: key down j
+[11:55:42] ws: key down k
+[11:55:42] ws: key down j
+[11:55:45] ws: friend connected from 127.0.0.1 (3 active)
+[11:55:45] ws: key down d
+[11:55:47] ws: key down enter
+[11:55:48] ws: key down space
+[11:55:50] ws: friend disconnected (2 active)
+[11:56:23] ws: key down w
+[11:56:24] ws: key down a
+[11:56:24] ws: key down w
+[11:56:24] ws: key down d
+[11:56:24] ws: key down a
+[11:56:24] ws: friend disconnected (1 active)
+[11:57:59] ws: friend disconnected (0 active)
+[11:58:02] ws: friend connected from 127.0.0.1 (1 active)
+[11:58:12] ws: key down d
+[11:58:13] ws: key down s
+[11:58:13] ws: key down a
+[11:58:13] ws: key down w
+[11:58:13] ws: key down s
+[11:58:13] ws: key down a
+[11:58:16] ws: friend disconnected (0 active)
+[11:58:17] ws: friend connected from 127.0.0.1 (1 active)
+[11:58:39] ws: friend disconnected (0 active)
+[11:59:01] ws: friend connected from 127.0.0.1 (1 active)
+[11:59:01] ws: key down e
+[11:59:02] ws: friend disconnected (0 active)
+[12:01:47] ws: friend connected from 127.0.0.1 (1 active)
+[12:01:48] ws: friend disconnected (0 active)
+[12:02:17] ws: friend connected from 127.0.0.1 (1 active)
+[12:02:17] ws: key down w
+[12:02:19] ws: friend disconnected (0 active)
+[12:02:51] ws: friend connected from 127.0.0.1 (1 active)
+[12:02:51] ws: key down a
+[12:02:54] ws: key down space
+[12:02:54] ws: friend disconnected (0 active)
+[12:03:41] ws: friend connected from 127.0.0.1 (1 active)
+[12:03:41] ws: key down enter
+[12:03:43] ws: friend disconnected (0 active)
+[12:04:07] ws: friend connected from 127.0.0.1 (1 active)
+[12:04:07] ws: key down enter
+[12:04:09] ws: friend disconnected (0 active)
+[12:04:09] ws: friend connected from 127.0.0.1 (1 active)
+[12:04:09] ws: key down a
+[12:04:12] ws: key down space
+[12:04:12] ws: friend disconnected (0 active)
+[12:04:54] ws: friend connected from 127.0.0.1 (1 active)
+[12:04:54] ws: key down enter
+[12:04:56] ws: friend disconnected (0 active)
+[12:04:56] ws: friend connected from 127.0.0.1 (1 active)
+[12:04:56] ws: key down a
+[12:04:58] ws: key down space
+[12:04:59] ws: friend disconnected (0 active)
+[12:05:19] ws: friend connected from 127.0.0.1 (1 active)
+[12:05:19] ws: key down space
+[12:05:21] ws: friend disconnected (0 active)
+[12:05:21] ws: friend connected from 127.0.0.1 (1 active)
+[12:05:21] ws: key down a
+[12:05:24] ws: key down space
+[12:05:25] ws: friend disconnected (0 active)
+[12:05:59] ws: friend connected from 127.0.0.1 (1 active)
+[12:05:59] ws: key down enter
+[12:06:00] ws: key down enter
+[12:06:02] ws: friend disconnected (0 active)
+[12:06:45] ws: friend connected from 127.0.0.1 (1 active)
+[12:06:45] ws: key down a
+[12:06:48] ws: friend disconnected (0 active)
+[12:08:28] ws: friend connected from 127.0.0.1 (1 active)
+[12:08:44] ws: friend disconnected (0 active)
+[12:08:45] ws: friend connected from 127.0.0.1 (1 active)
+[12:08:49] ws: key down a
+[12:08:49] ws: key down w
+[12:08:55] ws: friend disconnected (0 active)
+[12:08:57] ws: friend connected from 127.0.0.1 (1 active)
+[12:09:03] ws: key down w
+[12:09:04] ws: key down a
+[12:09:05] ws: key down s
+[12:09:05] ws: key down a
+[12:09:05] ws: key down d
+[12:09:05] ws: key down w
+[12:09:05] ws: key down a
+[12:09:06] ws: key down w
+[12:09:08] ws: key down a
+[12:09:09] ws: key down w
+[12:09:09] ws: key down d
+[12:09:09] ws: key down w
+[12:09:09] ws: key down s
+[12:09:09] ws: key down a
+[12:09:09] ws: key down d
+[12:09:09] ws: friend disconnected (0 active)
+[12:09:31] ws: friend connected from 127.0.0.1 (1 active)
+[12:09:32] ws: key down j
+[12:09:33] ws: key down k
+[12:09:34] ws: key down j
+[12:09:36] ws: key down a
+[12:09:36] ws: key down w
+[12:09:36] ws: key down k
+[12:09:36] ws: key down k
+[12:09:36] ws: key down d
+[12:09:36] ws: key down s
+[12:09:36] ws: key down a
+[12:09:37] ws: key down w
+[12:09:37] ws: key down a
+[12:09:38] ws: key down d
+[12:09:38] ws: key down w
+[12:09:38] ws: key down k
+[12:09:38] ws: key down a
+[12:09:39] ws: key down e
+[12:09:39] ws: key down e
+[12:09:39] ws: key down a
+[12:09:39] ws: key down w
+[12:09:40] ws: key down k
+[12:09:40] ws: key down k
+[12:09:40] ws: key down e
+[12:09:40] ws: key down w
+[12:09:40] ws: key down k
+[12:09:40] ws: key down a
+[12:09:41] ws: key down s
+[12:09:42] ws: key down w
+[12:09:42] ws: key down k
+[12:09:42] ws: key down a
+[12:09:42] ws: key down e
+[12:09:42] ws: key down k
+[12:09:42] ws: key down a
+[12:09:43] ws: key down e
+[12:09:43] ws: key down k
+[12:09:43] ws: key down a
+[12:09:43] ws: key down k
+[12:09:43] ws: key down w
+[12:09:43] ws: key down e
+[12:10:09] ws: key down w
+[12:10:09] ws: key down e
+[12:10:10] ws: key down w
+[12:10:11] ws: key down w
+[12:10:11] ws: key down a
+[12:10:38] ws: key down s
+[12:10:39] ws: key down e
+[12:11:11] ws: key down d
+[12:11:11] ws: key down w
+[12:11:11] ws: key down a
+[12:11:11] ws: key down e
+[12:11:11] ws: key down e
+[12:11:11] ws: key down a
+[12:11:11] ws: key down d
+[12:11:13] ws: key down j
+[12:11:14] ws: key down j
+[12:11:14] ws: key down j
+[12:11:14] ws: key down k
+[12:11:14] ws: key down j
+[12:11:14] ws: key down k
+[12:11:15] ws: key down j
+[12:11:15] ws: key down k
+[12:11:29] ws: friend disconnected (0 active)
+[12:11:30] ws: friend connected from 127.0.0.1 (1 active)
+[12:11:31] ws: key down d
+[12:12:27] ws: friend connected from 127.0.0.1 (2 active)
+[12:12:28] ws: key down a
+[12:12:30] ws: key down d
+[12:12:32] ws: friend disconnected (1 active)
+[12:13:02] ws: friend connected from 127.0.0.1 (2 active)
+[12:13:02] ws: key down enter
+[12:13:04] ws: key down space
+[12:13:06] ws: key down a
+[12:13:08] ws: friend disconnected (1 active)
+[12:13:37] ws: friend connected from 127.0.0.1 (2 active)
+[12:13:38] ws: key down a
+[12:13:41] ws: friend disconnected (1 active)
+[12:14:46] ws: friend connected from 127.0.0.1 (2 active)
+[12:14:48] ws: key down d
+[12:14:50] ws: friend disconnected (1 active)
+[12:16:00] ws: friend disconnected (0 active)
+[12:16:01] ws: friend connected from 127.0.0.1 (1 active)
+[12:16:34] ws: friend disconnected (0 active)
+[12:16:36] ws: friend connected from 127.0.0.1 (1 active)
+[12:16:38] ws: key down d
+[12:16:38] ws: key down w
+[12:16:38] ws: key down a
+[12:16:39] ws: key down d
+[12:16:39] ws: key down w
+[12:16:39] ws: key down a
+[12:16:39] ws: key down d
+[12:16:40] ws: key down w
+[12:16:40] ws: key down a
+[12:16:41] ws: key down d
+[12:16:41] ws: key down s
+[12:16:41] ws: key down a
+[12:16:41] ws: key down d
+[12:16:41] ws: key down w
+[12:16:41] ws: key down a
+[12:16:41] ws: key down d
+[12:16:42] ws: key down j
+[12:16:42] ws: key down k
+[12:16:43] ws: key down k
+[12:16:43] ws: key down a
+[12:16:43] ws: key down s
+[12:16:43] ws: key down w
+[12:16:43] ws: key down d
+[12:16:43] ws: key down w
+[12:16:44] ws: key down d
+[12:16:44] ws: key down q
+[12:16:44] ws: key down e
+[12:16:44] ws: key down d
+[12:16:45] ws: key down shift
+[12:17:29] ws: key down w
+[12:17:32] ws: key down j
+[12:17:37] ws: friend connected from 127.0.0.1 (2 active)
+[12:17:38] ws: key down d
+[12:17:41] ws: friend disconnected (1 active)
+[12:18:07] ws: friend connected from 127.0.0.1 (2 active)
+[12:18:07] ws: key down enter
+[12:18:08] ws: key down space
+[12:18:10] ws: friend disconnected (1 active)
+[12:18:19] ws: friend disconnected (0 active)
+[12:18:33] ws: friend connected from 127.0.0.1 (1 active)
+[12:18:34] ws: friend connected from 127.0.0.1 (2 active)
+[12:18:34] ws: key down a
+[12:18:38] ws: key down space
+[12:18:38] ws: friend disconnected (1 active)
+[12:18:56] ws: friend connected from 127.0.0.1 (2 active)
+[12:18:56] ws: key down a
+[12:18:56] ws: key down space
+[12:18:57] ws: friend disconnected (1 active)
+[12:19:03] ws: friend disconnected (0 active)
+[12:19:04] ws: friend connected from 127.0.0.1 (1 active)
+[12:19:06] ws: key down a
+[12:19:06] ws: key down w
+[12:19:06] ws: key down d
+[12:19:08] ws: key down d
+[12:19:08] ws: key down w
+[12:19:08] ws: key down w
+[12:19:08] ws: key down d
+[12:19:09] ws: key down a
+[12:19:09] ws: key down s
+[12:19:09] ws: key down d
+[12:19:09] ws: key down a
+[12:19:09] ws: key down w
+[12:19:09] ws: key down d
+[12:19:10] ws: key down w
+[12:19:10] ws: key down a
+[12:19:10] ws: key down d
+[12:19:10] ws: key down e
+[12:19:10] ws: key down w
+[12:19:10] ws: key down q
+[12:19:10] ws: key down e
+[12:19:10] ws: key down q
+[12:19:11] ws: friend connected from 127.0.0.1 (2 active)
+[12:19:11] ws: key down space
+[12:19:12] ws: key down d
+[12:19:14] ws: key down w
+[12:19:14] ws: key down d
+[12:19:14] ws: key down s
+[12:19:14] ws: key down a
+[12:19:16] ws: key down w
+[12:19:16] ws: friend disconnected (1 active)
+[12:19:16] ws: key down a
+[12:19:16] ws: key down d
+[12:19:16] ws: key down s
+[12:19:16] ws: key down a
+[12:19:17] ws: key down w
+[12:19:17] ws: key down a
+[12:19:17] ws: key down e
+[12:19:18] ws: key down e
+[12:19:18] ws: key down w
+[12:19:18] ws: key down q
+[12:19:19] ws: key down enter
+[12:19:20] ws: friend disconnected (0 active)

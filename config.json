@@ -1,0 +1,16 @@
+{
+  "token": "k7Qm2xT9rL4pW8vZ",
+  "http_port": 8080,
+  "pad_slot": 3,
+  "fps": 60,
+  "bitrate": "6M",
+  "ffmpeg": "C:\\ffmpeg\\bin\\ffmpeg.exe",
+  "mediamtx": "bin\\mediamtx.exe",
+  "mediamtx_config": "mediamtx-windows.yml",
+  "mediamtx_http": "http://127.0.0.1:8889",
+  "rtsp_publish": "rtsp://127.0.0.1:8554/game",
+  "path_name": "game",
+  "width": 1280,
+  "part_ms": 200,
+  "require_token": false
+}

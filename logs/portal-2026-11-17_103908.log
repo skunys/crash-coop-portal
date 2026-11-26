@@ -1,0 +1,98 @@
+[10:39:08] portal: Crash: Mind over Mutant co-op portal
+[10:39:08] portal: token = k7Qm2xT9rL4pW8vZ
+[10:39:08] pad: virtual Xbox 360 pad created for player 3
+[10:39:08] mediamtx: starting
+[10:39:09] mediamtx: RTSP ready on 127.0.0.1:8554
+[10:39:09] capture: game window hwnd 1775404
+[10:39:09] capture: mode 1 of 3
+[10:39:09] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i hwnd=1775404 -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:39:09] portal: page at  http://127.0.0.1:8080/?k=k7Qm2xT9rL4pW8vZ
+[10:39:09] portal: also at  http://169.254.44.149:8080/?k=k7Qm2xT9rL4pW8vZ
+[10:39:09] portal: also at  http://169.254.83.107:8080/?k=k7Qm2xT9rL4pW8vZ
+[10:39:09] portal: also at  http://192.168.2.101:8080/?k=k7Qm2xT9rL4pW8vZ
+[10:39:10] ws: friend connected from 127.0.0.1 (1 active)
+[10:39:25] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:39:26] capture: game window hwnd 1775404
+[10:39:26] capture: mode 2 of 3
+[10:39:26] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f lavfi -i ddagrab=output_idx=0:framerate=60 -vf hwdownload,format=bgra,format=yuv420p -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:39:30] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:39:31] capture: game window hwnd 1775404
+[10:39:31] capture: mode 3 of 3
+[10:39:31] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i desktop -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:39:35] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:39:36] capture: game window hwnd 1775404
+[10:39:36] capture: mode 1 of 3
+[10:39:36] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i hwnd=1775404 -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:39:40] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:39:41] capture: game window hwnd 1775404
+[10:39:41] capture: mode 2 of 3
+[10:39:41] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f lavfi -i ddagrab=output_idx=0:framerate=60 -vf hwdownload,format=bgra,format=yuv420p -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:39:45] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:39:46] capture: game window hwnd 1775404
+[10:39:46] capture: mode 3 of 3
+[10:39:46] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i desktop -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:39:50] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:39:51] capture: game window hwnd 1775404
+[10:39:51] capture: mode 1 of 3
+[10:39:51] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i hwnd=1775404 -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:39:55] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:39:56] capture: game window hwnd 1775404
+[10:39:56] capture: mode 2 of 3
+[10:39:56] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f lavfi -i ddagrab=output_idx=0:framerate=60 -vf hwdownload,format=bgra,format=yuv420p -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:39:56] ws: friend disconnected (0 active)
+[10:40:00] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:40:01] capture: game window hwnd 1775404
+[10:40:01] capture: mode 3 of 3
+[10:40:01] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i desktop -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:40:05] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:40:06] capture: game window hwnd 1775404
+[10:40:06] capture: mode 1 of 3
+[10:40:06] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i hwnd=1775404 -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:40:10] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:40:11] capture: game window hwnd 1775404
+[10:40:11] capture: mode 2 of 3
+[10:40:11] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f lavfi -i ddagrab=output_idx=0:framerate=60 -vf hwdownload,format=bgra,format=yuv420p -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:40:15] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:40:16] capture: game window hwnd 1775404
+[10:40:16] capture: mode 3 of 3
+[10:40:16] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i desktop -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:40:20] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:40:21] capture: game window hwnd 1775404
+[10:40:21] capture: mode 1 of 3
+[10:40:21] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i hwnd=1775404 -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:40:25] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:40:26] capture: game window hwnd 1775404
+[10:40:26] capture: mode 2 of 3
+[10:40:26] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f lavfi -i ddagrab=output_idx=0:framerate=60 -vf hwdownload,format=bgra,format=yuv420p -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:40:30] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:40:31] capture: game window hwnd 1775404
+[10:40:31] capture: mode 3 of 3
+[10:40:31] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i desktop -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:40:35] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:40:36] capture: game window hwnd 1775404
+[10:40:36] capture: mode 1 of 3
+[10:40:36] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i hwnd=1775404 -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:40:40] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:40:41] capture: game window hwnd 1775404
+[10:40:41] capture: mode 2 of 3
+[10:40:41] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f lavfi -i ddagrab=output_idx=0:framerate=60 -vf hwdownload,format=bgra,format=yuv420p -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:40:45] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:40:46] capture: game window hwnd 1775404
+[10:40:46] capture: mode 3 of 3
+[10:40:46] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i desktop -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:40:50] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:40:51] capture: game window hwnd 1775404
+[10:40:51] capture: mode 1 of 3
+[10:40:51] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i hwnd=1775404 -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:40:55] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:40:56] capture: game window hwnd 1775404
+[10:40:56] capture: mode 2 of 3
+[10:40:56] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f lavfi -i ddagrab=output_idx=0:framerate=60 -vf hwdownload,format=bgra,format=yuv420p -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:41:00] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:41:01] capture: game window hwnd 1775404
+[10:41:01] capture: mode 3 of 3
+[10:41:01] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i desktop -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[10:41:05] capture: ffmpeg exited with 4294967264; trying the next mode
+[10:41:06] capture: game window hwnd 1775404
+[10:41:06] capture: mode 1 of 3
+[10:41:06] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -nostdin -f gdigrab -framerate 60 -i hwnd=1775404 -vf scale=1920:-2 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 12M -maxrate 12M -bufsize 6M -g 60 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game

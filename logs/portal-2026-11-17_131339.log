@@ -1,0 +1,27 @@
+[13:13:39] portal: Crash: Mind over Mutant co-op portal
+[13:13:39] portal: token = k7Qm2xT9rL4pW8vZ
+[13:13:40] pad: virtual Xbox 360 pad created for player 3
+[13:13:40] mediamtx: starting
+[13:13:40] mediamtx: RTSP ready on 127.0.0.1:8554
+[13:13:40] capture: game window hwnd 9111672
+[13:13:40] capture: mode 1 of 3 | audio: True
+[13:13:40] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -f gdigrab -framerate 60 -i hwnd=9111672 -f s16le -ar 48000 -ac 2 -i pipe:0 -vf scale=1280:-2 -map 0:v:0 -map 1:a:0 -c:a aac -b:a 128k -ar 48000 -af aresample=async=1 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 6M -maxrate 6M -bufsize 6M -g 12 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[13:13:40] portal: page at   http://127.0.0.1:8080/?k=k7Qm2xT9rL4pW8vZ
+[13:13:40] portal: LAN         http://192.168.2.101:8080/?k=k7Qm2xT9rL4pW8vZ
+[13:13:40] audio: loopback of SAMSUNG (NVIDIA High Definition Audio)
+[13:13:40] portal: PUBLIC      http://93.86.197.32:8080/?k=k7Qm2xT9rL4pW8vZ
+[13:13:40] portal:            (works from outside only with the router forwarding TCP 8080 and UDP 8189 to this PC)
+[13:13:40] portal:            no router work? use the tunnel link printed below
+[13:13:40] tunnel: starting cloudflared quick tunnel
+[13:13:41] ws: friend connected from 127.0.0.1 (1 active)
+[13:13:41] focus: keeping the game in the foreground for player 2
+[13:13:45] tunnel: PUBLIC https://initial-yearly-fourth-donald.trycloudflare.com/?k=k7Qm2xT9rL4pW8vZ
+[13:13:45] tunnel: send that link -- nothing to install on her side
+[13:15:22] ws: friend disconnected (0 active)
+[13:15:40] ws: friend connected from 127.0.0.1 (1 active)
+[13:15:45] ws: friend connected from 127.0.0.1 (2 active)
+[13:15:45] ws: key down space
+[13:15:46] ws: friend disconnected (1 active)
+[13:15:49] ws: friend connected from 127.0.0.1 (2 active)
+[13:15:49] ws: key down d
+[13:15:50] ws: friend disconnected (1 active)

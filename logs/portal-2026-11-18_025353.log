@@ -1,0 +1,32 @@
+[02:53:53] portal: Crash: Mind over Mutant co-op portal
+[02:53:53] portal: token = k7Qm2xT9rL4pW8vZ (optional -- the address alone is enough)
+[02:53:53] pad: virtual Xbox 360 pad created for player 3
+[02:53:53] mediamtx: starting
+[02:53:53] mediamtx: RTSP ready on 127.0.0.1:8554
+[02:53:53] capture: the game window was not found -- capturing the desktop instead
+[02:53:53] capture: mode 1 of 2 | audio: True
+[02:53:53] capture: C:\Users\hunter\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe -hide_banner -loglevel warning -f lavfi -i ddagrab=output_idx=0:framerate=60 -f s16le -ar 48000 -ac 2 -i pipe:0 -vf hwdownload,format=bgra,scale=1280:-2,format=yuv420p -map 0:v:0 -map 1:a:0 -c:a aac -b:a 128k -ar 48000 -af aresample=async=1 -c:v h264_nvenc -preset p1 -tune ull -rc cbr -b:v 6M -maxrate 6M -bufsize 6M -g 12 -bf 0 -pix_fmt yuv420p -f rtsp -rtsp_transport tcp rtsp://127.0.0.1:8554/game
+[02:53:53] portal: page at   http://127.0.0.1:8080/?k=k7Qm2xT9rL4pW8vZ
+[02:53:53] portal: LAN         http://192.168.2.101:8080/?k=k7Qm2xT9rL4pW8vZ
+[02:53:53] audio: loopback of Headphones (HyperX Cloud III Wireless)
+[02:53:54] portal: PUBLIC      http://93.86.197.32:8080/?k=k7Qm2xT9rL4pW8vZ
+[02:53:54] portal:            (works from outside only with the router forwarding TCP 8080 and UDP 8189 to this PC)
+[02:53:54] portal:            no router work? use the tunnel link printed below
+[02:53:54] tunnel: starting cloudflared quick tunnel
+[02:53:59] tunnel: PUBLIC https://const-blah-carbon-successful.trycloudflare.com/?k=k7Qm2xT9rL4pW8vZ
+[02:53:59] tunnel: send that link -- nothing to install on her side
+[02:55:55] ws: friend connected from 127.0.0.1 (1 active)
+[02:55:55] ws: page version 2026-11-18-6
+[02:56:13] ws: friend disconnected (0 active)
+[02:56:33] ws: friend connected from 127.0.0.1 (1 active)
+[02:56:33] ws: page version 2026-11-18-6
+[02:57:16] ws: her browser sees NO controller
+[02:57:47] ws: friend disconnected (0 active)
+[02:57:51] ws: friend connected from 127.0.0.1 (1 active)
+[02:57:51] ws: page version 2026-11-18-6
+[02:57:52] ws: her browser sees NO controller
+[02:58:18] ws: friend disconnected (0 active)
+[02:58:22] ws: friend connected from 127.0.0.1 (1 active)
+[02:58:22] ws: page version 2026-11-18-7
+[02:59:16] ws: her browser sees NO controller
+[03:29:48] ws: her browser sees pad 'Xbox 360 Controller (XInput STANDARD GAMEPAD)' (mapping standard, 4 axes, 17 buttons)

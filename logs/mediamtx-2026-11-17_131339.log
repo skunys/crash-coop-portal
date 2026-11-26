@@ -1,0 +1,35 @@
+2026/11/17 13:13:40 INF MediaMTX v1.21.4, windows, amd64
+2026/11/17 13:13:40 INF configuration loaded from G:\Crash game\portal\mediamtx-windows.yml
+2026/11/17 13:13:40 INF [RTSP] started with listeners on 127.0.0.1:8554 (TCP/RTSP)
+2026/11/17 13:13:40 INF [HLS] started with listener on 127.0.0.1:8888 (TCP/HTTP)
+2026/11/17 13:13:40 INF [WebRTC] started with listeners on :8889 (TCP/HTTP), :8189 (UDP/ICE)
+2026/11/17 13:13:40 INF [MoQ] started with listeners on :8892 (TCP/HTTP2), :8892 (UDP/HTTP3), :8893 (UDP/QUIC)
+2026/11/17 13:13:40 INF [RTSP] [conn 127.0.0.1:34782] opened
+2026/11/17 13:13:40 INF [RTSP] [conn 127.0.0.1:34782] closed: EOF
+2026/11/17 13:13:41 INF [RTSP] [conn 127.0.0.1:34784] opened
+2026/11/17 13:13:41 INF [RTSP] [session 02f70117] created by 127.0.0.1:34784
+2026/11/17 13:13:41 INF [path game] stream is available and online, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 13:13:41 INF [RTSP] [session 02f70117] is publishing to path 'game'
+2026/11/17 13:13:41 INF [path game] RTP packets are too big (1460 > 1440), remuxing them into smaller ones
+2026/11/17 13:14:13 INF [HLS] [session 1da6aab7] created by 127.0.0.1:60715
+2026/11/17 13:14:13 INF [HLS] [muxer game] created (requested by 127.0.0.1:60715)
+2026/11/17 13:14:13 INF [HLS] [muxer game] is converting into HLS, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 13:14:13 INF [HLS] [session 1da6aab7] is reading from muxer 'game'
+2026/11/17 13:14:43 INF [RTSP] [conn 127.0.0.1:60636] opened
+2026/11/17 13:14:43 INF [RTSP] [session 86a6fe50] created by 127.0.0.1:60636
+2026/11/17 13:14:43 INF [RTSP] [session 86a6fe50] is reading from path 'game', with TCP, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 13:14:45 INF [RTSP] [session 86a6fe50] destroyed: torn down by 127.0.0.1:60636
+2026/11/17 13:14:45 INF [RTSP] [conn 127.0.0.1:60636] closed: read tcp 127.0.0.1:8554->127.0.0.1:60636: wsarecv: An existing connection was forcibly closed by the remote host.
+2026/11/17 13:14:45 INF [RTSP] [conn 127.0.0.1:19542] opened
+2026/11/17 13:14:45 INF [RTSP] [session 5580f58c] created by 127.0.0.1:19542
+2026/11/17 13:14:45 INF [RTSP] [session 5580f58c] is reading from path 'game', with TCP, 2 tracks (H264, MPEG-4 Audio)
+2026/11/17 13:14:47 INF [RTSP] [session 5580f58c] destroyed: torn down by 127.0.0.1:19542
+2026/11/17 13:14:47 INF [RTSP] [conn 127.0.0.1:19542] closed: read tcp 127.0.0.1:8554->127.0.0.1:19542: wsarecv: An established connection was aborted by the software in your host machine.
+2026/11/17 13:14:53 INF [HLS] [session 1da6aab7] closed: inactive
+2026/11/17 13:15:04 INF [HLS] [session dc4d223b] created by 127.0.0.1:27923
+2026/11/17 13:15:04 INF [HLS] [session dc4d223b] is reading from muxer 'game'
+2026/11/17 13:15:40 INF [HLS] [session effc47c7] created by 127.0.0.1:4883
+2026/11/17 13:15:40 INF [HLS] [session effc47c7] is reading from muxer 'game'
+2026/11/17 13:15:44 INF [HLS] [session dc4d223b] closed: inactive
+2026/11/17 13:16:20 INF [HLS] [session effc47c7] closed: inactive
+2026/11/17 13:16:53 INF [HLS] [muxer game] destroyed: not used anymore
