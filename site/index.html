@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crash: Mind over Mutant — co-op</title>
+<meta name="description" content="Join the Crash: Mind over Mutant co-op session as Player 2.">
+<style>
+  :root {
+    --bg: #0b0710;
+    --card: #150e1c;
+    --line: #2a1e36;
+    --ink: #f3ecf8;
+    --muted: #a495b5;
+    --orange: #ff8a1f;
+    --purple: #a855f7;
+    --green: #4ade80;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    background:
+      radial-gradient(ellipse 70% 50% at 50% -10%, #3b1257 0%, transparent 70%),
+      radial-gradient(ellipse 50% 40% at 90% 100%, #4a1d05 0%, transparent 70%),
+      var(--bg);
+    color: var(--ink);
+    font: 16px/1.55 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 18px 40px;
+  }
+  main { width: 100%; max-width: 620px; }
+
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--orange);
+    background: #ff8a1f1a;
+    border: 1px solid #ff8a1f33;
+    border-radius: 999px;
+    padding: 5px 12px;
+  }
+  h1 {
+    font-size: clamp(30px, 7vw, 44px);
+    line-height: 1.1;
+    letter-spacing: -.02em;
+    margin: 16px 0 10px;
+  }
+  h1 span {
+    background: linear-gradient(92deg, var(--orange), var(--purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .lead { color: var(--muted); margin: 0 0 26px; font-size: 17px; }
+
+  .panel {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 18px 50px -30px #000;
+  }
+
+  a.join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 17px 20px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, var(--orange), #e5711a);
+    color: #1b0d02;
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 10px 24px -12px #ff8a1f;
+    transition: transform .12s ease, filter .12s ease;
+  }
+  a.join:hover { filter: brightness(1.07); transform: translateY(-1px); }
+  a.join:active { transform: translateY(0); }
+  a.join[aria-disabled="true"] {
+    background: #2a1e36;
+    color: var(--muted);
+    box-shadow: none;
+    pointer-events: none;
+  }
+
+  .status { margin: 14px 2px 0; font-size: 13px; color: var(--muted); }
+  .status b { color: var(--ink); font-weight: 600; }
+  .status .dot {
+    display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+    background: var(--green); margin-right: 6px; vertical-align: 1px;
+  }
+
+  .link-row {
+    display: flex; gap: 8px; margin-top: 14px;
+  }
+  .link-row input {
+    flex: 1; min-width: 0;
+    background: #0d0813;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    color: var(--muted);
+    font: 12px/1 ui-monospace, SFMono-Regular, Consolas, monospace;
+    padding: 11px 12px;
+  }
+  .link-row button {
+    background: #241731;
+    border: 1px solid var(--line);
+    color: var(--ink);
+    border-radius: 9px;
+    padding: 0 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .link-row button:hover { background: #2e1e3f; }
+
+  h2 {
+    font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--muted); margin: 30px 0 12px; font-weight: 700;
+  }
+  .keys { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; }
+  @media (max-width: 430px) { .keys { grid-template-columns: 1fr; } }
+  .keys div { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: var(--muted); font-size: 14px; }
+  .keys span { color: var(--ink); }
+  kbd {
+    display: inline-block;
+    min-width: 24px;
+    text-align: center;
+    background: #241731;
+    border: 1px solid #3a2a4a;
+    border-bottom-width: 2px;
+    border-radius: 6px;
+    padding: 2px 7px;
+    font: 600 12px/1.5 ui-monospace, Consolas, monospace;
+    color: var(--ink);
+  }
+
+  .note {
+    margin-top: 22px;
+    font-size: 13px;
+    color: var(--muted);
+    border-left: 2px solid var(--purple);
+    padding: 2px 0 2px 14px;
+  }
+  .note strong { color: var(--ink); }
+  footer { margin-top: 26px; text-align: center; font-size: 12px; color: #6f6280; }
+</style>
+</head>
+<body>
+<main>
+  <span class="eyebrow">Crash: Mind over Mutant</span>
+  <h1>You're <span>Player&nbsp;2</span>.</h1>
+  <p class="lead">Click join, tap <b>Connect</b> on the page, and you're in his game.</p>
+
+  <div class="panel">
+    <a class="join" id="join" href="#" target="_blank" rel="noopener">Join the game &rarr;</a>
+
+    <p class="status" id="status"><span class="dot"></span>Working link, updated <b id="updated">today</b>.</p>
+
+    <div class="link-row">
+      <input id="linkText" readonly aria-label="Current join link">
+      <button id="copy" type="button">Copy</button>
+    </div>
+  </div>
+
+  <h2>Controls</h2>
+  <div class="keys">
+    <div><span>Move</span> <span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span></div>
+    <div><span>Jump</span> <kbd>Space</kbd></div>
+    <div><span>Light attack</span> <kbd>J</kbd></div>
+    <div><span>Heavy attack</span> <kbd>K</kbd></div>
+    <div><span>Grab / throw</span> <kbd>L</kbd></div>
+    <div><span>Block</span> <kbd>Shift</kbd></div>
+  </div>
+
+  <p class="note">
+    <strong>Your controller works too.</strong> Plug it in and press a button before
+    clicking join — the page picks it up on its own. Keep your sound on: the game
+    audio comes through the page.
+  </p>
+
+  <p class="note">
+    <strong>If the link suddenly stops working</strong> the stream was restarted and
+    the address changed. Ask him for the new link — this page gets updated with it.
+  </p>
+
+  <footer>Co-op session &middot; nothing is installed on your PC</footer>
+</main>
+
+<script src="config.js"></script>
+<script>
+  (function () {
+    const cfg = window.PORTAL || {};
+    const join = (cfg.join || '').trim();
+    const btn = document.getElementById('join');
+    const input = document.getElementById('linkText');
+    const status = document.getElementById('status');
+    const updated = document.getElementById('updated');
+    const copy = document.getElementById('copy');
+
+    if (cfg.updated) updated.textContent = cfg.updated;
+
+    if (!join || join.indexOf('your-tunnel-url') !== -1) {
+      btn.setAttribute('aria-disabled', 'true');
+      btn.textContent = 'Link not set yet';
+      input.value = '';
+      input.placeholder = 'Waiting for the new link';
+      status.innerHTML = '<b>No live link right now.</b> Ask him to start the co-op window.';
+    } else {
+      btn.href = join;
+      input.value = join;
+    }
+
+    copy.addEventListener('click', async function () {
+      if (!input.value) return;
+      try {
+        await navigator.clipboard.writeText(input.value);
+        copy.textContent = 'Copied';
+      } catch (e) {
+        input.select();
+        document.execCommand && document.execCommand('copy');
+        copy.textContent = 'Copied';
+      }
+      setTimeout(function () { copy.textContent = 'Copy'; }, 1600);
+    });
+  })();
+</script>
+</body>
+</html>

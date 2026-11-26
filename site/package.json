@@ -1,0 +1,9 @@
+{
+  "name": "crash-coop-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page that points Player 2 at the live Crash co-op portal link.",
+  "scripts": {
+    "build": "node build.mjs"
+  }
+}
